@@ -42,7 +42,7 @@ public class OrderEntity {
         this.id = id;
     }
 
-    
+
 
     @Override
     public boolean equals(Object o) {
