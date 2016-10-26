@@ -1,0 +1,85 @@
+<dataSource name="MySQL - test@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
+    <schema id="1" name="test">
+      <visible>1</visible>
+    </schema>
+    <schema id="2" name="information_schema" />
+    <schema id="3" name="mysql" />
+    <schema id="4" name="performance_schema" />
+    <schema id="5" name="phpmyadmin" />
+    <table id="6" parent="1" name="food" />
+    <table id="7" parent="1" name="image" />
+    <table id="8" parent="1" name="order" />
+    <table id="9" parent="1" name="user" />
+    <column id="10" parent="6" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="11" parent="6" name="name">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="12" parent="6" name="kind">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="13" parent="6" name="price">
+      <data-type>decimal(10)|0</data-type>
+    </column>
+    <key id="14" parent="6" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="15" parent="7" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="16" parent="7" name="url">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <key id="17" parent="7" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="18" parent="8" name="customar">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="19" parent="8" name="food_id">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="20" parent="8" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <key id="21" parent="8" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="22" parent="9" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="23" parent="9" name="id_card">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="24" parent="9" name="email">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="25" parent="9" name="password">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="26" parent="9" name="phone_number">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="27" parent="9" name="sex">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <key id="28" parent="9" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+  </database-model>
+</dataSource>
