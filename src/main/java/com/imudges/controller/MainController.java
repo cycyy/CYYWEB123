@@ -9,9 +9,16 @@ import org.springframework.web.bind.annotation.RequestMethod;
  */
 @Controller
 public class MainController {
-
+    Login login;
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public String index() {
+
         return "index";
     }
+   @RequestMapping(value = "/login.html",method = RequestMethod.GET)
+   public String login(){
+       return "login";
+   }
+
+
 }
