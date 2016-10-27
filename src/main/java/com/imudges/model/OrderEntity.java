@@ -1,6 +1,7 @@
 package com.imudges.model;
 
 import javax.persistence.*;
+import java.util.Date;
 
 /**
  * Created by cyy on 2016/10/26.
@@ -11,6 +12,7 @@ public class OrderEntity {
     private String customar;
     private Integer foodId;
     private int id;
+    private Date time;
 
     @Basic
     @Column(name = "customar", nullable = false, length = 255)
@@ -30,6 +32,15 @@ public class OrderEntity {
 
     public void setFoodId(Integer foodId) {
         this.foodId = foodId;
+    }
+
+    @Basic
+    @Column(name = "time", nullable = true)
+    public Date getTime() {
+        return time;
+    }
+    public void setTime(Date time) {
+        this.time = time;
     }
 
     @Id
@@ -54,6 +65,7 @@ public class OrderEntity {
         if (id != that.id) return false;
         if (customar != null ? !customar.equals(that.customar) : that.customar != null) return false;
         if (foodId != null ? !foodId.equals(that.foodId) : that.foodId != null) return false;
+        if (time != null ? !time.equals(that.time) : that.time != null) return false;
 
         return true;
     }
@@ -63,6 +75,7 @@ public class OrderEntity {
         int result = customar != null ? customar.hashCode() : 0;
         result = 31 * result + (foodId != null ? foodId.hashCode() : 0);
         result = 31 * result + id;
+        result = 31 * result + (time != null ? time.hashCode() : 0);
         return result;
     }
 }

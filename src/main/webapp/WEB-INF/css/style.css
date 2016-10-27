@@ -293,7 +293,7 @@ span.glyphicon.glyphicon-earphone {
 .register-but{
 	margin-top:1em;
 }
-.register-but form input[type="submit"] {
+.register-but  input[type="submit"] {
 	background: #FD9F3E;
 	color: #FFF;
 	font-size: 1.2em;

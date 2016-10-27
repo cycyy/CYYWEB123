@@ -151,7 +151,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="main-1">
 		<div class="container">
 			<div class="register">
-		  	  <form action="user_register" method="post">
+		  	  <form >
 				 <div class="register-top-grid">
 					<h3>PERSONAL INFORMATION</h3>
 					 <div class="wow fadeInLeft" data-wow-delay="0.4s">
@@ -182,14 +182,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<input type="text" name="ensure_password">
 							 </div>
 					 </div>
-				</form>
-				<div class="clearfix"> </div>
-				<div class="register-but">
-				   <form>
-					   <input type="submit" value="submit">
-					   <div class="clearfix"> </div>
-				   </form>
-				</div>
+				  <div class="clearfix"> </div>
+				  <div class="register-but">
+					  <input type="submit" value="submit">
+					  <div class="clearfix"> </div>
+				  </div>
+				</form >
+
 		   </div>
 		 </div>
 	</div>
