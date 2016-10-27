@@ -2,99 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2331c272-a2e4-4a73-8c77-6bd5259ba8b2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/fonts/Kalam-Bold.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/fonts/OleoScript-Bold.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/fonts/OpenSans-Regular.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/fonts/glyphicons-halflings-regular.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/fonts/glyphicons-halflings-regular.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/fonts/glyphicons-halflings-regular.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/fonts/glyphicons-halflings-regular.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/images/bag.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/images/banner1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/images/c1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/images/c2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/images/c3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/images/close.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/images/close_1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/images/d1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/images/d2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/images/d3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/images/d4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/images/e.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/images/e1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/images/e2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/images/e3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/images/e4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/images/e5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/images/e6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/images/g1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/images/g2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/images/g3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/images/g4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/images/g5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/images/g6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/images/g7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/images/g8.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/images/g9.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/images/left.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/images/list-arrow.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/images/m1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/images/m2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/images/m3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/images/m5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/images/m6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/images/m7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/images/nav.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/images/p1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/images/p10.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/images/p2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/images/p3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/images/p4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/images/p5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/images/p6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/images/p7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/images/p8.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/images/p9.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/images/right.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/images/s1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/images/s2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/images/s3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/images/s4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/images/s5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/images/s6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/images/s7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/images/s8.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/images/t1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/images/t2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/images/t3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/images/t4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/images/tick1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/images/to-top2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/imudges/controller/Login.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/css/bootstrap.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/css/chocolat.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/css/flexslider.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/css/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/fonts/glyphicons-halflings-regular.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/bootstrap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/easing.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/jquery-1.11.1.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/jquery.chocolat.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/jquery.flexslider.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/move-top.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/simpleCart.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/login.jsp" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/imudges/controller/MainController.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/imudges/model/OrderEntity.class" afterPath="$PROJECT_DIR$/target/classes/com/imudges/model/OrderEntity.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/imudges/controller/Register.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/account.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/imudges/controller/MainController.class" afterPath="$PROJECT_DIR$/target/classes/com/imudges/controller/MainController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/springmvcdemo/WEB-INF/classes/com/imudges/controller/MainController.class" afterPath="$PROJECT_DIR$/target/springmvcdemo/WEB-INF/classes/com/imudges/controller/MainController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/springmvcdemo/WEB-INF/classes/com/imudges/model/OrderEntity.class" afterPath="$PROJECT_DIR$/target/springmvcdemo/WEB-INF/classes/com/imudges/model/OrderEntity.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CYYWEB123.iml" afterPath="$PROJECT_DIR$/CYYWEB123.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/imudges/controller/Login.java" afterPath="$PROJECT_DIR$/src/main/java/com/imudges/controller/Login.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/imudges/controller/MainController.java" afterPath="$PROJECT_DIR$/src/main/java/com/imudges/controller/MainController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/springmvcdemo/WEB-INF/mvc-dispatcher-servlet.xml" afterPath="$PROJECT_DIR$/target/springmvcdemo/WEB-INF/mvc-dispatcher-servlet.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/springmvcdemo/WEB-INF/pages/index.jsp" afterPath="$PROJECT_DIR$/target/springmvcdemo/WEB-INF/pages/index.jsp" />
     </list>
     <ignored path="CYYWEB123.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -161,25 +75,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OrderEntity.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="OrderEntity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/imudges/model/OrderEntity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="494">
+            <state relative-caret-position="19">
               <caret line="34" column="7" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />
-              <folding>
-                <element signature="e#371#372#0" expanded="false" />
-                <element signature="e#402#403#0" expanded="false" />
-                <element signature="e#450#451#0" expanded="false" />
-                <element signature="e#490#491#0" expanded="false" />
-                <element signature="e#582#583#0" expanded="false" />
-                <element signature="e#611#612#0" expanded="false" />
-                <element signature="e#656#657#0" expanded="false" />
-                <element signature="e#692#693#0" expanded="false" />
-                <element signature="e#769#770#0" expanded="false" />
-                <element signature="e#794#795#0" expanded="false" />
-                <element signature="e#827#828#0" expanded="false" />
-                <element signature="e#855#856#0" expanded="false" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -187,8 +88,8 @@
       <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="377">
-              <caret line="58" column="8" selection-start-line="58" selection-start-column="8" selection-end-line="58" selection-end-column="8" />
+            <state relative-caret-position="-975">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="65" />
               <folding />
             </state>
           </provider>
@@ -197,27 +98,50 @@
       <file leaf-file-name="MainController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/imudges/controller/MainController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+            <state relative-caret-position="336">
+              <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#522#523#0" expanded="true" />
-                <element signature="e#550#551#0" expanded="true" />
+                <element signature="e#409#410#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Login.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Login.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/imudges/controller/Login.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="392">
-              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+            <state relative-caret-position="390">
+              <caret line="24" column="5" selection-start-line="18" selection-start-column="3" selection-end-line="24" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#417#418#0" expanded="true" />
-                <element signature="e#445#446#0" expanded="true" />
+                <element signature="e#492#493#0" expanded="true" />
+                <element signature="e#522#523#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Register.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/imudges/controller/Register.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="233">
+              <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#549#550#0" expanded="true" />
+                <element signature="e#581#582#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="account.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/account.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="78">
+              <caret line="153" column="55" selection-start-line="153" selection-start-column="55" selection-end-line="153" selection-end-column="55" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -225,8 +149,8 @@
       <file leaf-file-name="login.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/login.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3394">
-              <caret line="26" column="19" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
+            <state relative-caret-position="189">
+              <caret line="157" column="45" selection-start-line="157" selection-start-column="45" selection-end-line="157" selection-end-column="57" />
               <folding />
             </state>
           </provider>
@@ -261,8 +185,10 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/login.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/imudges/controller/Login.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/imudges/controller/MainController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/imudges/controller/Login.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/account.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/imudges/controller/Register.java" />
       </list>
     </option>
   </component>
@@ -1038,7 +964,7 @@
       <workItem from="1477403380254" duration="1326000" />
       <workItem from="1477404750804" duration="41000" />
       <workItem from="1477404922392" duration="64514000" />
-      <workItem from="1477489573912" duration="2235000" />
+      <workItem from="1477489573912" duration="8873000" />
     </task>
     <task id="LOCAL-00001" summary="数据库配置完成">
       <created>1477475716992</created>
@@ -1047,11 +973,18 @@
       <option name="project" value="LOCAL" />
       <updated>1477475716992</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="df">
+      <created>1477543595567</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1477543595567</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68116000" />
+    <option name="totallyTimeSpent" value="74754000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
@@ -1067,13 +1000,13 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32974428" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18463612" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3180593" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2045134" sideWeight="0.15496369" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20487106" sideWeight="0.8450363" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21131805" sideWeight="0.8450363" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295129" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
@@ -1117,7 +1050,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="数据库配置完成" />
-    <option name="LAST_COMMIT_MESSAGE" value="数据库配置完成" />
+    <MESSAGE value="df" />
+    <option name="LAST_COMMIT_MESSAGE" value="df" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1156,20 +1090,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="646">
           <caret line="34" column="7" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />
-          <folding>
-            <element signature="e#371#372#0" expanded="false" />
-            <element signature="e#402#403#0" expanded="false" />
-            <element signature="e#450#451#0" expanded="false" />
-            <element signature="e#490#491#0" expanded="false" />
-            <element signature="e#582#583#0" expanded="false" />
-            <element signature="e#611#612#0" expanded="false" />
-            <element signature="e#656#657#0" expanded="false" />
-            <element signature="e#692#693#0" expanded="false" />
-            <element signature="e#769#770#0" expanded="false" />
-            <element signature="e#794#795#0" expanded="false" />
-            <element signature="e#827#828#0" expanded="false" />
-            <element signature="e#855#856#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1187,8 +1108,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#522#523#0" expanded="true" />
-            <element signature="e#550#551#0" expanded="true" />
+            <element signature="e#409#410#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1199,8 +1119,8 @@
           <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#417#418#0" expanded="true" />
-            <element signature="e#445#446#0" expanded="true" />
+            <element signature="e#492#493#0" expanded="true" />
+            <element signature="e#522#523#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1225,6 +1145,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1258,8 +1179,7 @@
           <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#522#523#0" expanded="true" />
-            <element signature="e#550#551#0" expanded="true" />
+            <element signature="e#409#410#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1276,6 +1196,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1309,8 +1230,7 @@
           <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#522#523#0" expanded="true" />
-            <element signature="e#550#551#0" expanded="true" />
+            <element signature="e#409#410#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1319,6 +1239,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1392,27 +1313,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/imudges/model/OrderEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="34" column="7" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />
-          <folding>
-            <element signature="e#371#372#0" expanded="false" />
-            <element signature="e#402#403#0" expanded="false" />
-            <element signature="e#450#451#0" expanded="false" />
-            <element signature="e#490#491#0" expanded="false" />
-            <element signature="e#582#583#0" expanded="false" />
-            <element signature="e#611#612#0" expanded="false" />
-            <element signature="e#656#657#0" expanded="false" />
-            <element signature="e#692#693#0" expanded="false" />
-            <element signature="e#769#770#0" expanded="false" />
-            <element signature="e#794#795#0" expanded="false" />
-            <element signature="e#827#828#0" expanded="false" />
-            <element signature="e#855#856#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1426,41 +1327,68 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="58" column="8" selection-start-line="58" selection-start-column="8" selection-end-line="58" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3394">
-          <caret line="26" column="19" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
+        <state relative-caret-position="-975">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="65" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/imudges/controller/MainController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+        <state relative-caret-position="336">
+          <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#522#523#0" expanded="true" />
-            <element signature="e#550#551#0" expanded="true" />
+            <element signature="e#409#410#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/imudges/controller/Login.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        <state relative-caret-position="390">
+          <caret line="24" column="5" selection-start-line="18" selection-start-column="3" selection-end-line="24" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#417#418#0" expanded="true" />
-            <element signature="e#445#446#0" expanded="true" />
+            <element signature="e#492#493#0" expanded="true" />
+            <element signature="e#522#523#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="157" column="45" selection-start-line="157" selection-start-column="45" selection-end-line="157" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/account.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="153" column="55" selection-start-line="153" selection-start-column="55" selection-end-line="153" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/imudges/controller/Register.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#549#550#0" expanded="true" />
+            <element signature="e#581#582#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/imudges/model/OrderEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="34" column="7" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>
