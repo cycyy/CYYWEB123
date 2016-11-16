@@ -308,7 +308,18 @@ span.glyphicon.glyphicon-earphone {
 	outline: none;
 }
 .register-but input[type="submit"]:hover {
-	background:#08538c;
+	background: #FD9F3E;
+	color: #FFF;
+	font-size: 1.2em;
+	padding: 0.6em 2em;
+	transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-o-transition: 0.5s all;
+	display: inline-block;
+	text-transform: uppercase;
+	border: none;
+	outline: none;
 }
 div.register-bottom-grid {
 	margin-top:3em;

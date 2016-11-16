@@ -6,7 +6,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
 
 /**
  * Created by cyy on 2016/10/27.
@@ -20,16 +19,16 @@ public class Register {
     public String login(){
         return "account";
     }
-    @ResponseBody
+    //@ResponseBody
     @RequestMapping(value = "/user_register",method = RequestMethod.POST)
-    public boolean Get(String first_name,String last_name,String email,String password1,String password2 ){
+    public String Get(String first_name,String last_name,String email,String password,String ensure_password ){
         UserEntity userEntity = new UserEntity();
         userEntity.setF_name(first_name);
         userEntity.setL_name(last_name);
         userEntity.setEmail(email);
-        userEntity.setPassword(password1);
+        userEntity.setPassword(password);
         userRepository.saveAndFlush(userEntity);
-        return true;
+        return "login";
     }
 
 }
