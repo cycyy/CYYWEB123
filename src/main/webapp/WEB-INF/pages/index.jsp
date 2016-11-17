@@ -48,11 +48,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="header-right">
 						<div class="login" >
 							<c:choose>
-								<c:when test="${empty user.firstname}">
+								<c:when test="${empty currentUser.f_name}">
 									<a href="login.html">登录</a>
 								</c:when>
 								<c:otherwise>
-									<a href="usermessage.html">${user.firstname}</a>
+									<a href="index.html">${currentUser.f_name}</a>
 								</c:otherwise>
 							</c:choose>
 
