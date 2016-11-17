@@ -35,7 +35,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="phone">
 							<ul>
 								<li><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span></li>
-								<li><p>+4758 655 5947</p></li>
+								<li><p>+157 5495 3425</p></li>
 							</ul>
 						</div>
 						<div class="logo">

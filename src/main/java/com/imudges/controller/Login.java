@@ -28,10 +28,11 @@ public class Login {
             return "login";
         }
         else{
-            if(userEntity.getPassword()==password)
+            if(userEntity.getPassword()==password) {
                 return "index";
+            }
             else
-                return "login";
+                return "index";
         }
     }
 }

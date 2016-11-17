@@ -13,6 +13,10 @@ public class MainController {
     public String index() {
         return "index";
     }
+    @RequestMapping(value = "/index.html",method = RequestMethod.GET)
+    public String CYY(){
+        return "index";
+    }
 
 
 

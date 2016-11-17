@@ -38,15 +38,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="phone">
 							<ul>
 								<li><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span></li>
-								<li><p>+4758 655 5947</p></li>
+								<li><p>+157 5495 3425</p></li>
 							</ul>
 						</div>
 						<div class="logo">
-							<h1><a href="index.jsp">curabitur</a></h1>
+							<h1><a href="index.html">CYY</a></h1>
 						</div>
 						<div class="header-right">
 						<div class="login" >
-						<a href="login.html">login</a>
+						<a href="login.html">登录</a>
 						</div>
 						<div class="cart box_1">
 							<a href="checkout.html">
@@ -68,12 +68,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class="top-menu">
 					<span class="menu"><img src="images/nav.png" alt=""/> </span>
 						<ul>
-							<li><a  href="index.jsp" class="active">home</a></li>
-							<li><a  href="about.html">about</a></li>
-							<li><a  href="menu.html">menus</a></li>
+							<li><a  href="index.jsp" class="active">主页</a></li>
+							<li><a  href="about.html">关于</a></li>
+							<li><a  href="menu.html">菜单</a></li>
 							<li><a  href="gallery.html">gallery</a></li>
-							<li><a  href="events.html">events</a></li>
-							<li><a  href="contact.html">contact</a></li>
+							<li><a  href="events.html">消息</a></li>
+							<li><a  href="contact.html">联系我们</a></li>
 						</ul>
 						<!-- script for menu -->
 									
@@ -92,19 +92,19 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<li>
 									<div class="slider-info">
 										<h2>Welcome</h2>
-										<p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+										<p>美食不断更新中，请持续关注...</p>
 									</div>
 								</li>
 								<li>
 									<div class="slider-info">
 									<h2>Welcome</h2>
-										<p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+										<p>美食不断更新中，请持续关注...</p>
 									</div>
 								</li>
 								<li>	
 									<div class="slider-info">
 									<h2>Welcome</h2>
-										<p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+										<p>美食不断更新中，请持续关注...</p>
 									</div>
 								</li>
 							</ul>
@@ -195,7 +195,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<!--hot-offer-->
 					<div class="today-offer">
 						<div class="today-head">
-						<h3> today hot offer</h3>
+						<h3> 今日热门提供</h3>
 							<p>Autem vel eum iriure dolor in hendrerit in volestie consequat vel illum</p>
 					</div>
 					<div class="today-grids">
@@ -235,7 +235,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class="menu-offer">
 						<div class="container">
 						<div class="menu-head">
-						<h3>our menu</h3>
+						<h3>我们的菜单</h3>
 							<p>Autem vel eum iriure dolor in hendrerit in volestie consequat vel illum</p>
 					</div>
 					<div class="menu-grids">
@@ -351,7 +351,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="order-grids">
 				<div class="container">
 				<div class="order-head">
-						<h3>What makes us Different</h3>
+						<h3>什么使我们与众不同</h3>
 							<p>Autem vel eum iriure dolor in hendrerit in volestie consequat vel illum</p>
 					</div>
 				<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">

@@ -2,7 +2,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Login</title>
+<title>Menu</title>
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -25,7 +25,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		});
 	</script>
 <!---End-smoth-scrolling---->
-
+<!-- cart -->
+		<script src="js/simpleCart.min.js"> </script>
+	<!-- cart -->
 </head>
 <body>
 		<!-- start-header section-->
@@ -35,15 +37,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="phone">
 							<ul>
 								<li><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span></li>
-								<li><p>+157 5495 3425</p></li>
+								<li><p>+4758 655 5947</p></li>
 							</ul>
 						</div>
 						<div class="logo">
-							<h1><a href="index.jsp">curabitur</a></h1>
+							<h1><a href="index.html">curabitur</a></h1>
 						</div>
 						<div class="header-right">
 						<div class="login">
-						<a href="login.jsp">login</a>
+						<a href="login.html">login</a>
 						</div>
 						<div class="cart box_1">
 							<a href="checkout.html">
@@ -65,9 +67,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class="top-menu">
 					<span class="menu"><img src="images/nav.png" alt=""/> </span>
 						<ul>
-							<li><a  href="index.jsp">home</a></li>
+							<li><a  href="index.html">home</a></li>
 							<li><a  href="about.html">about</a></li>
-							<li><a  href="menu.html">menus</a></li>
+							<li><a  href="menu.html" class="active">menus</a></li>
 							<li><a  href="gallery.html">gallery</a></li>
 							<li><a  href="events.html">events</a></li>
 							<li><a  href="contact.html">contact</a></li>
@@ -146,41 +148,94 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</div>
 				</div>
 			</div>
-			<!--contact-->
 			<div class="content">
- <div class="main-1">
-		<div class="container">
-<div class="login-page">
-			   <div class="account_grid">
-			   <div class="col-md-6 login-left wow fadeInLeft" data-wow-delay="0.4s">
-			  	 <h3>NEW CUSTOMERS</h3>
-				 <p>By creating an account with our store, you will be able to move through the checkout process faster, store multiple shipping addresses, view and track your orders in your account and more.</p>
-				 <a class="acount-btn" href="account.html">Create an Account</a>
-			   </div>
-			   <div class="col-md-6 login-right wow fadeInRight" data-wow-delay="0.4s">
-			  	<h3>REGISTERED CUSTOMERS</h3>
-				<p>If you have an account with us, please log in.</p>
-				<form action="user_login" method="post">
-				  <div>
-					<span>Email Address<label>*</label></span>
-					<input type="text" name="email">
-				  </div>
-				  <div>
-					<span>Password<label>*</label></span>
-					<input type="text" name="password">
-				  </div>
-				  <a class="forgot" href="#">Forgot Your Password?</a>
-				  <input type="submit" value="Login">
-			    </form>
-			   </div>	
-			   <div class="clearfix"> </div>
-			 </div>
-		   </div>
-		   </div>
-	</div>
-	</div>
-<!-- login -->
-<div class="specials-section">
+			<div class="menu-section">
+					<div class="container">
+						<h3> featured menu</h3>
+						<div class="menu-grids wow bounceIn animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+							<div class="menu1">
+							<div class="col-md-4 menu-grid1 simpleCart_shelfItem">
+								<img src="images/m1.jpg" class="img-responsive" alt="" />
+								<div class="cur">
+									<div class="cur-left">
+										<div class="item_add"><span class="item_price"><a href="#"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a></span></div>
+									</div>
+									<div class="cur-right">
+										<div class="item_add"><span class="item_price"><h6><span>only</span>$95.00</h6></span></div>
+									</div>
+										<div class="clearfix"> </div>
+								</div>
+								</div>
+								<div class="col-md-4 menu-grid1 simpleCart_shelfItem">
+								<img src="images/m2.jpg" class="img-responsive" alt="" />
+								<div class="cur">
+									<div class="cur-left">
+										<div class="item_add"><span class="item_price"><a href="#"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a></span></div>
+									</div>
+									<div class="cur-right">
+										<div class="item_add"><span class="item_price"><h6><span>only</span> $75.00</h6></span></div>
+									</div>
+										<div class="clearfix"> </div>
+								</div>
+								</div>
+								<div class="col-md-4 menu-grid1 simpleCart_shelfItem">
+								<img src="images/m3.jpg" class="img-responsive" alt="" />
+								<div class="cur">
+									<div class="cur-left">
+										<div class="item_add"><span class="item_price"><a href="#"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a></span></div>
+									</div>
+									<div class="cur-right">
+										<div class="item_add"><span class="item_price"><h6><span>only</span>$65.00</h6></span></div>
+									</div>
+										<div class="clearfix"> </div>
+								</div>
+								</div>
+								<div class="clearfix"></div>
+								</div>
+								<div class="menu2">
+							<div class="col-md-4 menu-grid1 simpleCart_shelfItem">
+								<img src="images/m5.jpg" class="img-responsive" alt="" />
+								<div class="cur">
+									<div class="cur-left">
+										<div class="item_add"><span class="item_price"><a href="#"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a></span></div>
+									</div>
+									<div class="cur-right">
+										<div class="item_add"><span class="item_price"><h6><span>only</span> $55.00</h6></span></div>
+									</div>
+										<div class="clearfix"> </div>
+								</div>
+								</div>
+								<div class="col-md-4 menu-grid1 simpleCart_shelfItem">
+								<img src="images/m6.jpg" class="img-responsive" alt="" />
+								<div class="cur">
+									<div class="cur-left">
+										<div class="item_add"><span class="item_price"><a href="#"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a></span></div>
+									</div>
+									<div class="cur-right">
+										<div class="item_add"><span class="item_price"><h6><span>only</span> $65.00</h6></span></div>
+									</div>
+										<div class="clearfix"> </div>
+								</div>
+								</div>
+								<div class="col-md-4 menu-grid1 simpleCart_shelfItem">
+								<img src="images/m7.jpg" class="img-responsive" alt="" />
+								<div class="cur">
+									<div class="cur-left">
+										<div class="item_add"><span class="item_price"><a href="#"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a></span></div>
+									</div>
+									<div class="cur-right">
+										<div class="item_add"><span class="item_price"><h6><span>only</span> $85.00</h6></span></div>
+									</div>
+										<div class="clearfix"> </div>
+								</div>
+								</div>
+								<div class="clearfix"></div>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+						</div>
+					</div>
+			<div class="specials-section">
 				<div class="container">
 					<div class="col-md-3 specials">
 					<h3>about</h3>
