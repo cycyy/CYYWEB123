@@ -158,10 +158,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<img src="images/m1.jpg" class="img-responsive" alt="" />
 								<div class="cur">
 									<div class="cur-left">
-										<div class="item_add"><span class="item_price"><a href="#"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a></span></div>
+										<div class="item_add"><span class="item_price"><a href="menu.html"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a></span></div>
 									</div>
 									<div class="cur-right">
-										<div class="item_add"><span class="item_price"><h6><span>only</span>$95.00</h6></span></div>
+										<div class="item_add"><span class="item_price"><h6><span>only</span>¥95.00</h6></span></div>
 									</div>
 										<div class="clearfix"> </div>
 								</div>
@@ -170,10 +170,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<img src="images/m2.jpg" class="img-responsive" alt="" />
 								<div class="cur">
 									<div class="cur-left">
-										<div class="item_add"><span class="item_price"><a href="#"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a></span></div>
+										<div class="item_add"><span class="item_price"><a href="menu.html"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a></span></div>
 									</div>
 									<div class="cur-right">
-										<div class="item_add"><span class="item_price"><h6><span>only</span> $75.00</h6></span></div>
+										<div class="item_add"><span class="item_price"><h6><span>only</span> ¥75.00</h6></span></div>
 									</div>
 										<div class="clearfix"> </div>
 								</div>
@@ -182,10 +182,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<img src="images/m3.jpg" class="img-responsive" alt="" />
 								<div class="cur">
 									<div class="cur-left">
-										<div class="item_add"><span class="item_price"><a href="#"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a></span></div>
+										<div class="item_add"><span class="item_price"><a href="menu.html"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a></span></div>
 									</div>
 									<div class="cur-right">
-										<div class="item_add"><span class="item_price"><h6><span>only</span>$65.00</h6></span></div>
+										<div class="item_add"><span class="item_price"><h6><span>only</span>¥65.00</h6></span></div>
 									</div>
 										<div class="clearfix"> </div>
 								</div>
@@ -197,10 +197,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<img src="images/m5.jpg" class="img-responsive" alt="" />
 								<div class="cur">
 									<div class="cur-left">
-										<div class="item_add"><span class="item_price"><a href="#"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a></span></div>
+										<div class="item_add"><span class="item_price"><a href="menu.html"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a></span></div>
 									</div>
 									<div class="cur-right">
-										<div class="item_add"><span class="item_price"><h6><span>only</span> $55.00</h6></span></div>
+										<div class="item_add"><span class="item_price"><h6><span>only</span> ¥55.00</h6></span></div>
 									</div>
 										<div class="clearfix"> </div>
 								</div>
@@ -209,10 +209,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<img src="images/m6.jpg" class="img-responsive" alt="" />
 								<div class="cur">
 									<div class="cur-left">
-										<div class="item_add"><span class="item_price"><a href="#"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a></span></div>
+										<div class="item_add"><span  class="item_price"><a href="menu.html"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a></span></div>
 									</div>
 									<div class="cur-right">
-										<div class="item_add"><span class="item_price"><h6><span>only</span> $65.00</h6></span></div>
+										<div class="item_add"><span class="item_price"><h6><span>only</span> ¥65.00</h6></span></div>
 									</div>
 										<div class="clearfix"> </div>
 								</div>
@@ -221,7 +221,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<img src="images/m7.jpg" class="img-responsive" alt="" />
 								<div class="cur">
 									<div class="cur-left">
-										<div class="item_add"><span class="item_price"><a href="#"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a></span></div>
+										<div class="item_add"><span class="item_price"><a href="menu.html"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a></span></div>
 									</div>
 									<div class="cur-right">
 										<div class="item_add"><span class="item_price"><h6><span>only</span> $85.00</h6></span></div>

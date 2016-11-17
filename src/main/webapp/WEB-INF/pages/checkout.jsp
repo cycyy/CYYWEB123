@@ -1,9 +1,8 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Login</title>
+<title>Check out</title>
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -36,22 +35,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="phone">
 							<ul>
 								<li><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span></li>
-								<li><p>+157 5495 3425</p></li>
+								<li><p>+4758 655 5947</p></li>
 							</ul>
 						</div>
 						<div class="logo">
-							<h1><a href="index.jsp">curabitur</a></h1>
+							<h1><a href="index.html">curabitur</a></h1>
 						</div>
 						<div class="header-right">
 						<div class="login">
-							<c:choose>
-								<c:when test="${empty user.firstname}">
-									<a href="login.html">登录</a>
-								</c:when>
-								<c:otherwise>
-									<a href="usermessage.html">${user.firstname}</a>
-								</c:otherwise>
-							</c:choose>
+						<a href="login.html">login</a>
 						</div>
 						<div class="cart box_1">
 							<a href="checkout.html">
@@ -73,13 +65,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class="top-menu">
 					<span class="menu"><img src="images/nav.png" alt=""/> </span>
 						<ul>
-							<li><a  href="index.jsp">home</a></li>
+							<li><a  href="index.html">home</a></li>
 							<li><a  href="about.html">about</a></li>
 							<li><a  href="menu.html">menus</a></li>
 							<li><a  href="gallery.html">gallery</a></li>
 							<li><a  href="events.html">events</a></li>
 							<li><a  href="contact.html">contact</a></li>
-						</ul>
+						</ul
 						<!-- script for menu -->
 									
 							 <script>
@@ -154,40 +146,103 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</div>
 				</div>
 			</div>
-			<!--contact-->
-			<div class="content">
- <div class="main-1">
-		<div class="container">
-<div class="login-page">
-			   <div class="account_grid">
-			   <div class="col-md-6 login-left wow fadeInLeft" data-wow-delay="0.4s">
-			  	 <h3>NEW CUSTOMERS</h3>
-				 <p>By creating an account with our store, you will be able to move through the checkout process faster, store multiple shipping addresses, view and track your orders in your account and more.</p>
-				 <a class="acount-btn" href="account.html">Create an Account</a>
-			   </div>
-			   <div class="col-md-6 login-right wow fadeInRight" data-wow-delay="0.4s">
-			  	<h3>REGISTERED CUSTOMERS</h3>
-				<p>If you have an account with us, please log in.</p>
-				<form action="user_login" method="post">
-				  <div>
-					<span>Email Address<label>*</label></span>
-					<input type="text" name="email">
+<!-- checkout -->
+<div class="cart-items">
+	<div class="container">
+			 <h1>My Shopping Bag (3)</h1>
+				<script>$(document).ready(function(c) {
+					$('.close1').on('click', function(c){
+						$('.cart-header').fadeOut('slow', function(c){
+							$('.cart-header').remove();
+						});
+						});	  
+					});
+			   </script>
+			 <div class="cart-header">
+				 <div class="close1"> </div>
+				 <div class="cart-sec simpleCart_shelfItem">
+						<div class="cart-item cyc">
+							 <img src="images/c1.jpg" class="img-responsive" alt="">
+						</div>
+					   <div class="cart-item-info">
+						<h3><a href="#"> Lorem Ipsum is not simply </a><span>Pickup time:</span></h3>
+						<ul class="qty">
+							<li><p>Min. order value:</p></li>
+							<li><p>FREE delivery</p></li>
+						</ul>
+							 <div class="delivery">
+							 <p>Service Charges : $10.00</p>
+							 <span>Delivered in 1-1:30 hours</span>
+							 <div class="clearfix"></div>
+				        </div>	
+					   </div>
+					   <div class="clearfix"></div>
+											
 				  </div>
-				  <div>
-					<span>Password<label>*</label></span>
-					<input type="text" name="password">
-				  </div>
-				  <a class="forgot" href="#">Forgot Your Password?</a>
-				  <input type="submit" value="Login">
-			    </form>
-			   </div>	
-			   <div class="clearfix"> </div>
 			 </div>
-		   </div>
-		   </div>
-	</div>
-	</div>
-<!-- login -->
+			 <script>$(document).ready(function(c) {
+					$('.close2').on('click', function(c){
+							$('.cart-header2').fadeOut('slow', function(c){
+						$('.cart-header2').remove();
+					});
+					});	  
+					});
+			 </script>
+			 <div class="cart-header2">
+				 <div class="close2"> </div>
+				  <div class="cart-sec simpleCart_shelfItem">
+						<div class="cart-item cyc">
+							 <img src="images/c2.jpg" class="img-responsive" alt="">
+						</div>
+					   <div class="cart-item-info">
+						<h3><a href="#"> Lorem Ipsum is not simply </a><span>Pickup time:</span></h3>
+						<ul class="qty">
+							<li><p>Min. order value:</p></li>
+							<li><p>FREE delivery</p></li>
+						</ul>
+							 <div class="delivery">
+							 <p>Service Charges : $10.00</p>
+							 <span>Delivered in 1-1:30 hours</span>
+							 <div class="clearfix"></div>
+				        </div>	
+					   </div>
+					   <div class="clearfix"></div>
+											
+				  </div>
+			  </div>
+			  <script>$(document).ready(function(c) {
+					$('.close3').on('click', function(c){
+							$('.cart-header3').fadeOut('slow', function(c){
+						$('.cart-header3').remove();
+					});
+					});	  
+					});
+			 </script>
+			  <div class="cart-header3">
+				 <div class="close3"> </div>
+				  <div class="cart-sec simpleCart_shelfItem">
+						<div class="cart-item cyc">
+							 <img src="images/c3.jpg" class="img-responsive" alt="">
+						</div>
+					   <div class="cart-item-info">
+						<h3><a href="#"> Lorem Ipsum is not simply </a><span>Pickup time:</span></h3>
+						<ul class="qty">
+							<li><p>Min. order value:</p></li>
+							<li><p>FREE delivery</p></li>
+						</ul>
+							 <div class="delivery">
+							 <p>Service Charges : $10.00</p>
+							 <span>Delivered in 1-1:30 hours</span>
+							 <div class="clearfix"></div>
+				        </div>	
+					   </div>
+					   <div class="clearfix"></div>
+											
+				  </div>
+			  </div>		
+		 </div>
+		 </div>
+<!-- checkout -->	
 <div class="specials-section">
 				<div class="container">
 					<div class="col-md-3 specials">
