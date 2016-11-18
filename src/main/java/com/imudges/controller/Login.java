@@ -17,8 +17,6 @@ import org.springframework.web.bind.annotation.SessionAttributes;
 public class Login {
     @Autowired
     private UserRepository userRepository;
-    public String Email;
-    public String PassWord;
     @RequestMapping(value = "/login.html",method = RequestMethod.GET)
     public String login(){
         return "login";

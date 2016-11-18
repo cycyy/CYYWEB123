@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE HTML>
 <html>
@@ -43,7 +44,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						</div>
 						<div class="header-right">
 						<div class="login">
-						<a href="login.html">login</a>
+							<c:choose>
+								<c:when test="${empty currentUser.f_name}">
+									<a href="login.html">登录</a>
+								</c:when>
+								<c:otherwise>
+									<a href="index.html">${currentUser.f_name}</a>
+								</c:otherwise>
+							</c:choose>
 						</div>
 						<div class="cart box_1">
 							<a href="checkout.html">

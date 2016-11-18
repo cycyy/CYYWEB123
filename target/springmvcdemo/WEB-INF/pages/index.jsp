@@ -52,7 +52,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<a href="login.html">登录</a>
 								</c:when>
 								<c:otherwise>
-									<a href="index.html">${currentUser.f_name}</a>
+									<a href="personal.html">${currentUser.f_name}</a>
 								</c:otherwise>
 							</c:choose>
 
