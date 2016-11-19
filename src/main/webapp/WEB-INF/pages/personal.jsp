@@ -157,15 +157,34 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<h3>用户信息</h3>
 					 <div class="wow fadeInLeft" data-wow-delay="0.4s">
 						<span>First Name<label>*</label></span>
-						<input type="text" value="${currentUser.f_name}" readonly="true">
+						<input type="text"  name="first_name" value="${currentUser.f_name}" readonly="true">
 					 </div>
 					 <div class="wow fadeInRight" data-wow-delay="0.4s" readonly="true">
 						<span>Last Name<label>*</label></span>
-						<input type="text" value="${currentUser.l_name}" readonly="true">
+						<input type="text"  name="last_name"
+							   value="${currentUser.l_name}" readonly="true">
 					 </div>
 					 <div class="wow fadeInRight" data-wow-delay="0.4s">
 						 <span>Email Address<label>*</label></span>
-						 <input type="text" value="${currentUser.email}" readonly="true">
+						 <input type="text" name="email"
+								value="${currentUser.email}" readonly="true">
+					 </div>
+					 <div class="wow fadeInLeft" data-wow-delay="0.4s">
+						 <span>Phone Number<label>*</label></span>
+						 <input type="text"  name="phone_number"
+						 <c:choose>
+						 <c:when test="${empty currentUser.phone_number}">
+								value="" readonly="true">
+						 </c:when>
+						 <c:otherwise>
+								value="${currentUser.phone_number}" readonly="true">
+						 </c:otherwise>
+						 </c:choose>
+					 </div>
+					 <div class="wow fadeInLeft" data-wow-delay="0.4s">
+						 <span>Sex<label>*</label></span>
+						 <input type="text"  name="sex"
+								value="${currentUser.sex}" readonly="true">
 					 </div>
 					 <div class="clearfix"> </div>
 					 <a class="news-letter" href="#">
@@ -176,15 +195,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						    <h3>修改密码</h3>
 						 <div class="wow fadeInRight" data-wow-delay="0.4s">
 							 <span>Old Password<label>*</label></span>
-							 <input type="text">
+							 <input type="text" name="old_password">
 						 </div>
 							 <div class="wow fadeInLeft" data-wow-delay="0.4s">
 								<span>New Password<label>*</label></span>
-								<input type="text">
+								<input type="text" name="new_password1">
 							 </div>
 							 <div class="wow fadeInRight" data-wow-delay="0.4s">
 								<span>Confirm Password<label>*</label></span>
-								<input type="text">
+								<input type="text" name="new_password2">
 							 </div>
 					 </div>
 
