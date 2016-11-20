@@ -9,10 +9,9 @@ import javax.persistence.*;
 @Table(name = "user", schema = "test", catalog = "")
 public class UserEntity {
     private int id;
-    private String idCard;
     private String email;
     private String password;
-    private Integer phoneNumber;
+    private String phoneNumber;
     private String sex;
     private String f_name;
     private String l_name;
@@ -47,15 +46,7 @@ public class UserEntity {
         this.l_name = l_name;
     }
 
-    @Basic
-    @Column(name = "id_card", nullable = true, length = 255)
-    public String getIdCard() {
-        return idCard;
-    }
 
-    public void setIdCard(String idCard) {
-        this.idCard = idCard;
-    }
 
     @Basic
     @Column(name = "email", nullable = false, length = 255)
@@ -78,12 +69,12 @@ public class UserEntity {
     }
 
     @Basic
-    @Column(name = "phone_number", nullable = true)
-    public Integer getPhoneNumber() {
+    @Column(name = "phone_number", nullable = false,length = 255)
+    public String getPhoneNumber() {
         return phoneNumber;
     }
 
-    public void setPhoneNumber(Integer phoneNumber) {
+    public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
 
@@ -105,7 +96,6 @@ public class UserEntity {
         UserEntity that = (UserEntity) o;
 
         if (id != that.id) return false;
-        if (idCard != null ? !idCard.equals(that.idCard) : that.idCard != null) return false;
         if (email != null ? !email.equals(that.email) : that.email != null) return false;
         if (password != null ? !password.equals(that.password) : that.password != null) return false;
         if (phoneNumber != null ? !phoneNumber.equals(that.phoneNumber) : that.phoneNumber != null) return false;
@@ -118,7 +108,6 @@ public class UserEntity {
     @Override
     public int hashCode() {
         int result = id;
-        result = 31 * result + (idCard != null ? idCard.hashCode() : 0);
         result = 31 * result + (email != null ? email.hashCode() : 0);
         result = 31 * result + (password != null ? password.hashCode() : 0);
         result = 31 * result + (phoneNumber != null ? phoneNumber.hashCode() : 0);

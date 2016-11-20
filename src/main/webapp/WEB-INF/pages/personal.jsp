@@ -44,7 +44,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						</div>
 						<div class="header-right">
 						<div class="login">
-						<a href="login.html">login</a>
+							<c:choose>
+								<c:when test="${empty currentUser.f_name}">
+									<a href="login.html">登录</a>
+								</c:when>
+								<c:otherwise>
+									<a href="index.html">${currentUser.f_name}</a>
+								</c:otherwise>
+							</c:choose>
 						</div>
 						<div class="cart box_1">
 							<a href="checkout.html">
@@ -157,12 +164,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<h3>用户信息</h3>
 					 <div class="wow fadeInLeft" data-wow-delay="0.4s">
 						<span>First Name<label>*</label></span>
-						<input type="text"  name="first_name" value="${currentUser.f_name}" readonly="true">
+						<input type="text"  name="first_name" value="${currentUser.f_name}" >
 					 </div>
-					 <div class="wow fadeInRight" data-wow-delay="0.4s" readonly="true">
+					 <div class="wow fadeInRight" data-wow-delay="0.4s" >
 						<span>Last Name<label>*</label></span>
 						<input type="text"  name="last_name"
-							   value="${currentUser.l_name}" readonly="true">
+							   value="${currentUser.l_name}" >
 					 </div>
 					 <div class="wow fadeInRight" data-wow-delay="0.4s">
 						 <span>Email Address<label>*</label></span>
@@ -173,18 +180,25 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						 <span>Phone Number<label>*</label></span>
 						 <input type="text"  name="phone_number"
 						 <c:choose>
-						 <c:when test="${empty currentUser.phone_number}">
-								value="" readonly="true">
+						 <c:when test="${empty currentUser.phoneNumber}">
+								value="" >
 						 </c:when>
 						 <c:otherwise>
-								value="${currentUser.phone_number}" readonly="true">
+								value="${currentUser.phoneNumber}" >
 						 </c:otherwise>
 						 </c:choose>
 					 </div>
 					 <div class="wow fadeInLeft" data-wow-delay="0.4s">
 						 <span>Sex<label>*</label></span>
 						 <input type="text"  name="sex"
-								value="${currentUser.sex}" readonly="true">
+						 <c:choose>
+						 <c:when test="${empty currentUser.sex}">
+								value="" >
+						 </c:when>
+						 <c:otherwise>
+							 value="${currentUser.sex}" >
+						 </c:otherwise>
+						 </c:choose>
 					 </div>
 					 <div class="clearfix"> </div>
 					 <a class="news-letter" href="#">
