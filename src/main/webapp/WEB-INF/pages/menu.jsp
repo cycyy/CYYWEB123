@@ -51,7 +51,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<a href="login.html">登录</a>
 								</c:when>
 								<c:otherwise>
-									<a href="index.html">${currentUser.f_name}</a>
+									<a href="personal.html">${currentUser.f_name}</a>
 								</c:otherwise>
 							</c:choose>
 						</div>
@@ -148,8 +148,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		        </div>
 					</div>
 					<div class="col-md-3 search">
-					<form>
-					<input type="submit" value="search">
+					<form action="/add_submit" method="post" >
+					<input type="submit" value="提交">
 					</form>				
 					</div>
 					<div class="clearfix"></div>
@@ -166,7 +166,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<img src="images/m1.jpg" class="img-responsive" alt="" />
 								<div class="cur">
 									<div class="cur-left">
-										<div class="item_add"><span class="item_price"><a href="menu.html"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a></span></div>
+										<div class="item_add"><span class="item_price"><a href="add_thinggs?food_id=$"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a></span></div>
 									</div>
 									<div class="cur-right">
 										<div class="item_add"><span class="item_price"><h6><span>only</span>¥95.00</h6></span></div>
