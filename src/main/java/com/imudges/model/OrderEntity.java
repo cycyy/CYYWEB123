@@ -10,20 +10,22 @@ import java.util.Date;
 @Entity
 @Table(name = "order", schema = "test", catalog = "")
 public class OrderEntity {
-    private Integer customar_id;
+    private Integer customarid;
     private Integer foodId;
-    private String id;
+    private Integer id;
     private Timestamp time;
     private Integer all_price;
 
+
+
     @Basic
-    @Column(name = "customar_id", nullable = false, length = 255)
-    public Integer getCustomar() {
-        return customar_id;
+    @Column(name = "customarid", nullable = false, length = 255)
+    public Integer getCustomarid() {
+        return customarid;
     }
 
-    public void setCustomar(Integer customar_id) {
-        this.customar_id = customar_id;
+    public void setCustomarid(Integer customarid) {
+        this.customarid = customarid;
     }
 
     @Basic
@@ -58,14 +60,13 @@ public class OrderEntity {
 
     @Id
     @Column(name = "id", nullable = false)
-    public String getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(Integer id) {
         this.id = id;
     }
-
 
 
     @Override
@@ -75,17 +76,17 @@ public class OrderEntity {
 
         OrderEntity that = (OrderEntity) o;
 
-        if (id != that.id) return false;
-        if (customar_id != null ? !customar_id.equals(that.customar_id) : that.customar_id != null) return false;
+        if (customarid != null ? !customarid.equals(that.customarid) : that.customarid != null) return false;
         if (foodId != null ? !foodId.equals(that.foodId) : that.foodId != null) return false;
+        if (id != null ? !id.equals(that.id) : that.id != null) return false;
         if (time != null ? !time.equals(that.time) : that.time != null) return false;
-        if (all_price != that.all_price) return false;
-        return true;
+        return all_price != null ? all_price.equals(that.all_price) : that.all_price == null;
+
     }
 
     @Override
     public int hashCode() {
-        int result = customar_id!= null ? customar_id.hashCode() : 0;
+        int result = customarid != null ? customarid.hashCode() : 0;
         result = 31 * result + (foodId != null ? foodId.hashCode() : 0);
         result = 31 * result + (id != null ? id.hashCode() : 0);
         result = 31 * result + (time != null ? time.hashCode() : 0);

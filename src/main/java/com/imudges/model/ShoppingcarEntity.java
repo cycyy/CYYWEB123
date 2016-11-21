@@ -1,9 +1,6 @@
 package com.imudges.model;
 
-import javax.persistence.Basic;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.sql.Timestamp;
 
 /**
@@ -18,7 +15,7 @@ public class ShoppingcarEntity {
     private Integer foodId;
     private Timestamp time;
 
-    @Basic
+    @Id
     @Column(name = "id", nullable = false)
     public int getId() {
         return id;

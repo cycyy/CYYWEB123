@@ -1,6 +1,8 @@
 package com.imudges.controller;
 
+import com.imudges.model.ShoppingcarEntity;
 import com.imudges.model.UserEntity;
+import com.imudges.repository.ShoppingcarRespository;
 import com.imudges.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -18,6 +20,8 @@ import org.springframework.web.bind.annotation.SessionAttributes;
 public class Login {
     @Autowired
     private UserRepository userRepository;
+    @Autowired
+    private ShoppingcarRespository shoppingcarRespository;
 
     @RequestMapping(value = "/login.html",method = RequestMethod.GET)
     public String login(){
@@ -26,7 +30,7 @@ public class Login {
     @RequestMapping(value = "/user_login",method = RequestMethod.POST)
     public String  Verification(String email,String password,ModelMap modelMap){
         UserEntity userEntity=userRepository.findByEmail(email) ;
-        int customerId=userEntity.getId();
+        ShoppingcarEntity shoppingcarEntity=new ShoppingcarEntity();
         if(userEntity==null){
             return "login";
         }
@@ -34,6 +38,10 @@ public class Login {
             if(userEntity.getPassword().equals(password)) {
                 //<p>${currentUser.name}</p>
                 modelMap.addAttribute("currentUser", userEntity);
+                shoppingcarEntity.setCustomarId(userEntity.getId());
+                shoppingcarRespository.saveAndFlush(shoppingcarEntity);
+                shoppingcarEntity=shoppingcarRespository.findOne(userEntity.getId());
+                modelMap.addAttribute("currentShoppingcar",shoppingcarEntity);
                 //UserEntity userEntity1 = (UserEntity) modelMap.get("currentUser");  判断是否登录了用户
                 return "index";
             }

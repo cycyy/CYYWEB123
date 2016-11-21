@@ -95,6 +95,7 @@
     <column id="33" parent="10" name="id">
       <mandatory>1</mandatory>
       <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
     </column>
     <column id="34" parent="10" name="customar_id">
       <data-type>int(11)|0</data-type>
@@ -108,5 +109,9 @@
     <column id="37" parent="10" name="time">
       <data-type>timestamp|0</data-type>
     </column>
+    <key id="38" parent="10" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
   </database-model>
 </dataSource>

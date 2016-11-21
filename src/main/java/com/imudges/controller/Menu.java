@@ -1,5 +1,6 @@
 package com.imudges.controller;
 
+import com.imudges.repository.ShoppingcarRespository;
 import com.imudges.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -16,6 +17,8 @@ public class Menu {
 
     @Autowired
     private UserRepository userRepository;
+    @Autowired
+    private ShoppingcarRespository shoppingcarRespository;
     @RequestMapping(value = "/checkout.html",method = RequestMethod.GET)
     public String Menu(){
         return "checkout";
