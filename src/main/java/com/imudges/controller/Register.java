@@ -1,6 +1,7 @@
 package com.imudges.controller;
 
 import com.imudges.model.UserEntity;
+import com.imudges.repository.OrderRepository;
 import com.imudges.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -14,6 +15,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class Register {
     @Autowired
     UserRepository userRepository;
+    @Autowired
+    OrderRepository orderRepository;
 
     @RequestMapping(value = "/account.html",method = RequestMethod.GET)
     public String login(){

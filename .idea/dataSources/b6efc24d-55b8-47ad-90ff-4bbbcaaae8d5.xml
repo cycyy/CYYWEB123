@@ -11,75 +11,102 @@
     <table id="7" parent="1" name="image" />
     <table id="8" parent="1" name="order" />
     <table id="9" parent="1" name="user" />
-    <column id="10" parent="6" name="id">
+    <table id="10" parent="1" name="shoppingcar" />
+    <column id="11" parent="6" name="id">
       <mandatory>1</mandatory>
       <data-type>int(11)|0</data-type>
     </column>
-    <column id="11" parent="6" name="name">
+    <column id="12" parent="6" name="name">
       <data-type>varchar(255)|0</data-type>
     </column>
-    <column id="12" parent="6" name="kind">
+    <column id="13" parent="6" name="kind">
       <data-type>varchar(255)|0</data-type>
     </column>
-    <column id="13" parent="6" name="price">
-      <data-type>decimal(10)|0</data-type>
+    <column id="14" parent="6" name="price">
+      <data-type>int(10)|0</data-type>
     </column>
-    <key id="14" parent="6" name="PRIMARY">
+    <key id="15" parent="6" name="PRIMARY">
       <columns>id</columns>
       <primary>1</primary>
     </key>
-    <column id="15" parent="7" name="id">
+    <column id="16" parent="7" name="id">
       <mandatory>1</mandatory>
       <data-type>int(11)|0</data-type>
     </column>
-    <column id="16" parent="7" name="url">
+    <column id="17" parent="7" name="url">
       <mandatory>1</mandatory>
       <data-type>varchar(255)|0</data-type>
     </column>
-    <key id="17" parent="7" name="PRIMARY">
+    <key id="18" parent="7" name="PRIMARY">
       <columns>id</columns>
       <primary>1</primary>
     </key>
-    <column id="18" parent="8" name="customar">
+    <column id="19" parent="8" name="customar_id">
       <mandatory>1</mandatory>
+      <data-type>int(255)|0</data-type>
+    </column>
+    <column id="20" parent="8" name="food_id">
       <data-type>varchar(255)|0</data-type>
     </column>
-    <column id="19" parent="8" name="food_id">
-      <data-type>int(11)|0</data-type>
-    </column>
-    <column id="20" parent="8" name="id">
+    <column id="21" parent="8" name="id">
       <mandatory>1</mandatory>
       <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
     </column>
-    <key id="21" parent="8" name="PRIMARY">
+    <column id="22" parent="8" name="time">
+      <data-type>timestamp|0</data-type>
+    </column>
+    <column id="23" parent="8" name="all_price">
+      <data-type>int(10)|0</data-type>
+    </column>
+    <key id="24" parent="8" name="PRIMARY">
       <columns>id</columns>
       <primary>1</primary>
     </key>
-    <column id="22" parent="9" name="id">
+    <column id="25" parent="9" name="id">
       <mandatory>1</mandatory>
       <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
     </column>
-    <column id="23" parent="9" name="id_card">
+    <column id="26" parent="9" name="email">
       <mandatory>1</mandatory>
       <data-type>varchar(255)|0</data-type>
     </column>
-    <column id="24" parent="9" name="email">
+    <column id="27" parent="9" name="password">
       <mandatory>1</mandatory>
       <data-type>varchar(255)|0</data-type>
     </column>
-    <column id="25" parent="9" name="password">
-      <mandatory>1</mandatory>
+    <column id="28" parent="9" name="phone_number">
       <data-type>varchar(255)|0</data-type>
     </column>
-    <column id="26" parent="9" name="phone_number">
-      <data-type>int(11)|0</data-type>
-    </column>
-    <column id="27" parent="9" name="sex">
+    <column id="29" parent="9" name="sex">
       <data-type>varchar(255)|0</data-type>
     </column>
-    <key id="28" parent="9" name="PRIMARY">
+    <column id="30" parent="9" name="first_name">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="31" parent="9" name="last_name">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <key id="32" parent="9" name="PRIMARY">
       <columns>id</columns>
       <primary>1</primary>
     </key>
+    <column id="33" parent="10" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="34" parent="10" name="customar_id">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="35" parent="10" name="all_price">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="36" parent="10" name="food_id">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="37" parent="10" name="time">
+      <data-type>timestamp|0</data-type>
+    </column>
   </database-model>
 </dataSource>

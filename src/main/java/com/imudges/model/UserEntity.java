@@ -69,7 +69,7 @@ public class UserEntity {
     }
 
     @Basic
-    @Column(name = "phone_number", nullable = false,length = 255)
+    @Column(name = "phone_number",length = 255)
     public String getPhoneNumber() {
         return phoneNumber;
     }

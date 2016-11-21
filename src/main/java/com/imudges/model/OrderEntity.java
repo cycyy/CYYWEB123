@@ -1,6 +1,7 @@
 package com.imudges.model;
 
 import javax.persistence.*;
+import java.sql.Timestamp;
 import java.util.Date;
 
 /**
@@ -12,7 +13,7 @@ public class OrderEntity {
     private Integer customar_id;
     private Integer foodId;
     private String id;
-    private Date time;
+    private Timestamp time;
     private Integer all_price;
 
     @Basic
@@ -26,7 +27,7 @@ public class OrderEntity {
     }
 
     @Basic
-    @Column(name = "all_price", nullable = false, length = 255)
+    @Column(name = "all_price", nullable = true, length = 255)
     public Integer getAll_price() {
         return all_price;
     }
@@ -48,10 +49,10 @@ public class OrderEntity {
 
     @Basic
     @Column(name = "time", nullable = true)
-    public Date getTime() {
+    public Timestamp getTime() {
         return time;
     }
-    public void setTime(Date time) {
+    public void setTime(Timestamp time) {
         this.time = time;
     }
 
