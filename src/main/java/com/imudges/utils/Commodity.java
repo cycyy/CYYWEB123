@@ -1,5 +1,8 @@
 package com.imudges.utils;
 
+import com.imudges.model.FoodEntity;
+import com.imudges.model.ImageEntity;
+
 /**
  * Created by cyy on 2016/11/21.
  */

@@ -1,7 +1,7 @@
 package com.imudges.model;
 
 import javax.persistence.*;
-import java.util.Collection;
+import java.util.List;
 
 /**
  * Created by cyy on 2016/11/21.
@@ -13,7 +13,8 @@ public class FoodEntity {
     private String name;
     private String kind;
     private Integer price;
-    private Collection<ImageEntity> imagesById;
+    private List<ImageEntity> imagesById;
+    private List<OrderEntity> ordersById;
 
     @Id
     @Column(name = "id", nullable = false)
@@ -80,11 +81,20 @@ public class FoodEntity {
     }
 
     @OneToMany(mappedBy = "foodByFoodid")
-    public Collection<ImageEntity> getImagesById() {
+    public List<ImageEntity> getImagesById() {
         return imagesById;
     }
 
-    public void setImagesById(Collection<ImageEntity> imagesById) {
+    public void setImagesById(List<ImageEntity> imagesById) {
         this.imagesById = imagesById;
+    }
+
+    @OneToMany(mappedBy = "foodByFoodid")
+    public List<OrderEntity> getOrdersById() {
+        return ordersById;
+    }
+
+    public void setOrdersById(List<OrderEntity> ordersById) {
+        this.ordersById = ordersById;
     }
 }

@@ -1,5 +1,7 @@
 package com.imudges.controller;
 
+import com.imudges.model.ShoppingcarEntity;
+import com.imudges.model.UserEntity;
 import com.imudges.repository.ShoppingcarRespository;
 import com.imudges.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -36,9 +38,7 @@ public class Login {
             if(userEntity.getPassword().equals(password)) {
                 //<p>${currentUser.name}</p>
                 modelMap.addAttribute("currentUser", userEntity);
-                shoppingcarEntity.setCustomarId(userEntity.getId());
-                shoppingcarRespository.saveAndFlush(shoppingcarEntity);
-                shoppingcarEntity=shoppingcarRespository.findOne(userEntity.getId());
+                shoppingcarRespository.saveAndFlush(shoppingcarEntity);;
                 modelMap.addAttribute("currentShoppingcar",shoppingcarEntity);
                 //UserEntity userEntity1 = (UserEntity) modelMap.get("currentUser");  判断是否登录了用户
                 return "index";

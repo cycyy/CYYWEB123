@@ -1,5 +1,6 @@
 package com.imudges.controller;
 
+import com.imudges.model.UserEntity;
 import com.imudges.repository.OrderRepository;
 import com.imudges.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,8 +26,8 @@ public class Register {
     @RequestMapping(value = "/user_register",method = RequestMethod.POST)
     public String Get(String first_name,String last_name,String email,String password,String ensure_password ){
         UserEntity userEntity = new UserEntity();
-        userEntity.setF_name(first_name);
-        userEntity.setL_name(last_name);
+        userEntity.setFirstName(first_name);
+        userEntity.setLastName(last_name);
         userEntity.setEmail(email);
         userEntity.setPassword(password);
         userRepository.saveAndFlush(userEntity);

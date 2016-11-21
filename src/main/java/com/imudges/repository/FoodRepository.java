@@ -1,5 +1,6 @@
 package com.imudges.repository;
 
+import com.imudges.model.FoodEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 /**

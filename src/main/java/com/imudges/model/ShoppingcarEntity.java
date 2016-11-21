@@ -11,8 +11,8 @@ import java.sql.Timestamp;
 public class ShoppingcarEntity {
     private int id;
     private String allprice;
+    private Integer foodid;
     private Timestamp time;
-    private FoodEntity foodByFoodid;
 
     @Id
     @Column(name = "id", nullable = false)
@@ -35,6 +35,16 @@ public class ShoppingcarEntity {
     }
 
     @Basic
+    @Column(name = "foodid", nullable = true)
+    public Integer getFoodid() {
+        return foodid;
+    }
+
+    public void setFoodid(Integer foodid) {
+        this.foodid = foodid;
+    }
+
+    @Basic
     @Column(name = "time", nullable = true)
     public Timestamp getTime() {
         return time;
@@ -53,6 +63,7 @@ public class ShoppingcarEntity {
 
         if (id != that.id) return false;
         if (allprice != null ? !allprice.equals(that.allprice) : that.allprice != null) return false;
+        if (foodid != null ? !foodid.equals(that.foodid) : that.foodid != null) return false;
         if (time != null ? !time.equals(that.time) : that.time != null) return false;
 
         return true;
@@ -62,17 +73,8 @@ public class ShoppingcarEntity {
     public int hashCode() {
         int result = id;
         result = 31 * result + (allprice != null ? allprice.hashCode() : 0);
+        result = 31 * result + (foodid != null ? foodid.hashCode() : 0);
         result = 31 * result + (time != null ? time.hashCode() : 0);
         return result;
-    }
-
-    @ManyToOne
-    @JoinColumn(name = "foodid", referencedColumnName = "id")
-    public FoodEntity getFoodByFoodid() {
-        return foodByFoodid;
-    }
-
-    public void setFoodByFoodid(FoodEntity foodByFoodid) {
-        this.foodByFoodid = foodByFoodid;
     }
 }

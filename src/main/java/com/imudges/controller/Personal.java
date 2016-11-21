@@ -1,5 +1,6 @@
 package com.imudges.controller;
 
+import com.imudges.model.UserEntity;
 import com.imudges.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -29,8 +30,8 @@ public class Personal {
         else {
             if(new_password1.equals(new_password2)) {
                 userRepository.findOne(userEntity1.getId());
-                if(first_name!="") { userEntity1.setF_name(first_name);}
-                if(last_name!="") { userEntity1.setL_name(last_name);}
+                if(first_name!="") { userEntity1.setFirstName(first_name);}
+                if(last_name!="") { userEntity1.setLastName(last_name);}
                 if(email!="") { userEntity1.setEmail(email);}
                 if(new_password1!="") { userEntity1.setPassword(new_password1);}
                 if(phone_number!="") { userEntity1.setPhoneNumber(phone_number);}

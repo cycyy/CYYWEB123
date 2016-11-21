@@ -1,5 +1,6 @@
 package com.imudges.repository;
 
+import com.imudges.model.ShoppingcarEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 /**

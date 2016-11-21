@@ -1,5 +1,6 @@
 package com.imudges.repository;
 
+import com.imudges.model.OrderEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

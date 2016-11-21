@@ -61,6 +61,8 @@
                 <prop key="hibernate.c3p0.preferredTestQuery">SELECT 1;</prop>
                 <prop key="hibernate.c3p0.testConnectionOnCheckout">true</prop>
                 <prop key="hibernate.c3p0.idle_test_period">3000</prop>
+                <!-- 解决lazy加载问题-->
+                <prop key="hibernate.enable_lazy_load_no_trans">true</prop>
             </props>
         </property>
     </bean>

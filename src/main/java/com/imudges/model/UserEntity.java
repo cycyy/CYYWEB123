@@ -1,7 +1,7 @@
 package com.imudges.model;
 
 import javax.persistence.*;
-import java.util.Collection;
+import java.util.List;
 
 /**
  * Created by cyy on 2016/11/21.
@@ -16,7 +16,7 @@ public class UserEntity {
     private String sex;
     private String firstName;
     private String lastName;
-    private Collection<OrderEntity> ordersById;
+    private List<OrderEntity> ordersById;
 
     @Id
     @Column(name = "id", nullable = false)
@@ -119,11 +119,11 @@ public class UserEntity {
     }
 
     @OneToMany(mappedBy = "userByCustomarid")
-    public Collection<OrderEntity> getOrdersById() {
+    public List<OrderEntity> getOrdersById() {
         return ordersById;
     }
 
-    public void setOrdersById(Collection<OrderEntity> ordersById) {
+    public void setOrdersById(List<OrderEntity> ordersById) {
         this.ordersById = ordersById;
     }
 }
