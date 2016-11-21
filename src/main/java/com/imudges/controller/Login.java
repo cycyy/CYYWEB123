@@ -1,7 +1,5 @@
 package com.imudges.controller;
 
-import com.imudges.model.ShoppingcarEntity;
-import com.imudges.model.UserEntity;
 import com.imudges.repository.ShoppingcarRespository;
 import com.imudges.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;

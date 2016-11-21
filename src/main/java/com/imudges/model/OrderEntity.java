@@ -2,51 +2,27 @@ package com.imudges.model;
 
 import javax.persistence.*;
 import java.sql.Timestamp;
-import java.util.Date;
 
 /**
- * Created by cyy on 2016/10/26.
+ * Created by cyy on 2016/11/21.
  */
 @Entity
 @Table(name = "order", schema = "test", catalog = "")
 public class OrderEntity {
-    private Integer customarid;
-    private Integer foodId;
-    private Integer id;
+    private int id;
     private Timestamp time;
-    private Integer all_price;
+    private Integer price;
+    private UserEntity userByCustomarid;
+    private FoodEntity foodByFoodid;
 
-
-
-    @Basic
-    @Column(name = "customarid", nullable = false, length = 255)
-    public Integer getCustomarid() {
-        return customarid;
+    @Id
+    @Column(name = "id", nullable = false)
+    public int getId() {
+        return id;
     }
 
-    public void setCustomarid(Integer customarid) {
-        this.customarid = customarid;
-    }
-
-    @Basic
-    @Column(name = "all_price", nullable = true, length = 255)
-    public Integer getAll_price() {
-        return all_price;
-    }
-
-    public void setAll_price(Integer all_price) {
-        this.all_price = all_price;
-    }
-
-
-    @Basic
-    @Column(name = "food_id", nullable = true)
-    public Integer getFoodId() {
-        return foodId;
-    }
-
-    public void setFoodId(Integer foodId) {
-        this.foodId = foodId;
+    public void setId(int id) {
+        this.id = id;
     }
 
     @Basic
@@ -54,20 +30,20 @@ public class OrderEntity {
     public Timestamp getTime() {
         return time;
     }
+
     public void setTime(Timestamp time) {
         this.time = time;
     }
 
-    @Id
-    @Column(name = "id", nullable = false)
-    public Integer getId() {
-        return id;
+    @Basic
+    @Column(name = "price", nullable = true)
+    public Integer getPrice() {
+        return price;
     }
 
-    public void setId(Integer id) {
-        this.id = id;
+    public void setPrice(Integer price) {
+        this.price = price;
     }
-
 
     @Override
     public boolean equals(Object o) {
@@ -76,21 +52,38 @@ public class OrderEntity {
 
         OrderEntity that = (OrderEntity) o;
 
-        if (customarid != null ? !customarid.equals(that.customarid) : that.customarid != null) return false;
-        if (foodId != null ? !foodId.equals(that.foodId) : that.foodId != null) return false;
-        if (id != null ? !id.equals(that.id) : that.id != null) return false;
+        if (id != that.id) return false;
         if (time != null ? !time.equals(that.time) : that.time != null) return false;
-        return all_price != null ? all_price.equals(that.all_price) : that.all_price == null;
+        if (price != null ? !price.equals(that.price) : that.price != null) return false;
 
+        return true;
     }
 
     @Override
     public int hashCode() {
-        int result = customarid != null ? customarid.hashCode() : 0;
-        result = 31 * result + (foodId != null ? foodId.hashCode() : 0);
-        result = 31 * result + (id != null ? id.hashCode() : 0);
+        int result = id;
         result = 31 * result + (time != null ? time.hashCode() : 0);
-        result = 31 * result + (all_price != null ? all_price.hashCode() : 0);
+        result = 31 * result + (price != null ? price.hashCode() : 0);
         return result;
+    }
+
+    @ManyToOne
+    @JoinColumn(name = "customarid", referencedColumnName = "id", nullable = false)
+    public UserEntity getUserByCustomarid() {
+        return userByCustomarid;
+    }
+
+    public void setUserByCustomarid(UserEntity userByCustomarid) {
+        this.userByCustomarid = userByCustomarid;
+    }
+
+    @ManyToOne
+    @JoinColumn(name = "foodid", referencedColumnName = "id")
+    public FoodEntity getFoodByFoodid() {
+        return foodByFoodid;
+    }
+
+    public void setFoodByFoodid(FoodEntity foodByFoodid) {
+        this.foodByFoodid = foodByFoodid;
     }
 }

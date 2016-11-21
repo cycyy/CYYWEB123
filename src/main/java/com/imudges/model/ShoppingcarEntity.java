@@ -10,10 +10,9 @@ import java.sql.Timestamp;
 @Table(name = "shoppingcar", schema = "test", catalog = "")
 public class ShoppingcarEntity {
     private int id;
-    private Integer customarId;
-    private String allPrice;
-    private Integer foodId;
+    private String allprice;
     private Timestamp time;
+    private FoodEntity foodByFoodid;
 
     @Id
     @Column(name = "id", nullable = false)
@@ -26,33 +25,13 @@ public class ShoppingcarEntity {
     }
 
     @Basic
-    @Column(name = "customar_id", nullable = true)
-    public Integer getCustomarId() {
-        return customarId;
+    @Column(name = "allprice", nullable = true, length = 255)
+    public String getAllprice() {
+        return allprice;
     }
 
-    public void setCustomarId(Integer customarId) {
-        this.customarId = customarId;
-    }
-
-    @Basic
-    @Column(name = "all_price", nullable = true, length = 255)
-    public String getAllPrice() {
-        return allPrice;
-    }
-
-    public void setAllPrice(String allPrice) {
-        this.allPrice = allPrice;
-    }
-
-    @Basic
-    @Column(name = "food_id", nullable = true)
-    public Integer getFoodId() {
-        return foodId;
-    }
-
-    public void setFoodId(Integer foodId) {
-        this.foodId = foodId;
+    public void setAllprice(String allprice) {
+        this.allprice = allprice;
     }
 
     @Basic
@@ -73,9 +52,7 @@ public class ShoppingcarEntity {
         ShoppingcarEntity that = (ShoppingcarEntity) o;
 
         if (id != that.id) return false;
-        if (customarId != null ? !customarId.equals(that.customarId) : that.customarId != null) return false;
-        if (allPrice != null ? !allPrice.equals(that.allPrice) : that.allPrice != null) return false;
-        if (foodId != null ? !foodId.equals(that.foodId) : that.foodId != null) return false;
+        if (allprice != null ? !allprice.equals(that.allprice) : that.allprice != null) return false;
         if (time != null ? !time.equals(that.time) : that.time != null) return false;
 
         return true;
@@ -84,10 +61,18 @@ public class ShoppingcarEntity {
     @Override
     public int hashCode() {
         int result = id;
-        result = 31 * result + (customarId != null ? customarId.hashCode() : 0);
-        result = 31 * result + (allPrice != null ? allPrice.hashCode() : 0);
-        result = 31 * result + (foodId != null ? foodId.hashCode() : 0);
+        result = 31 * result + (allprice != null ? allprice.hashCode() : 0);
         result = 31 * result + (time != null ? time.hashCode() : 0);
         return result;
+    }
+
+    @ManyToOne
+    @JoinColumn(name = "foodid", referencedColumnName = "id")
+    public FoodEntity getFoodByFoodid() {
+        return foodByFoodid;
+    }
+
+    public void setFoodByFoodid(FoodEntity foodByFoodid) {
+        this.foodByFoodid = foodByFoodid;
     }
 }

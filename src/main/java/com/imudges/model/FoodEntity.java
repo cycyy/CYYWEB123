@@ -1,9 +1,10 @@
 package com.imudges.model;
 
 import javax.persistence.*;
+import java.util.Collection;
 
 /**
- * Created by cyy on 2016/10/26.
+ * Created by cyy on 2016/11/21.
  */
 @Entity
 @Table(name = "food", schema = "test", catalog = "")
@@ -12,6 +13,7 @@ public class FoodEntity {
     private String name;
     private String kind;
     private Integer price;
+    private Collection<ImageEntity> imagesById;
 
     @Id
     @Column(name = "id", nullable = false)
@@ -44,7 +46,7 @@ public class FoodEntity {
     }
 
     @Basic
-    @Column(name = "price", nullable = true, precision = 0)
+    @Column(name = "price", nullable = true)
     public Integer getPrice() {
         return price;
     }
@@ -75,5 +77,14 @@ public class FoodEntity {
         result = 31 * result + (kind != null ? kind.hashCode() : 0);
         result = 31 * result + (price != null ? price.hashCode() : 0);
         return result;
+    }
+
+    @OneToMany(mappedBy = "foodByFoodid")
+    public Collection<ImageEntity> getImagesById() {
+        return imagesById;
+    }
+
+    public void setImagesById(Collection<ImageEntity> imagesById) {
+        this.imagesById = imagesById;
     }
 }

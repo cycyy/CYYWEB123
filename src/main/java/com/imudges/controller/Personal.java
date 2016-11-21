@@ -1,6 +1,5 @@
 package com.imudges.controller;
 
-import com.imudges.model.UserEntity;
 import com.imudges.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

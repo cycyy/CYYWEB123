@@ -3,13 +3,14 @@ package com.imudges.model;
 import javax.persistence.*;
 
 /**
- * Created by cyy on 2016/10/26.
+ * Created by cyy on 2016/11/21.
  */
 @Entity
 @Table(name = "image", schema = "test", catalog = "")
 public class ImageEntity {
     private int id;
     private String url;
+    private FoodEntity foodByFoodid;
 
     @Id
     @Column(name = "id", nullable = false)
@@ -49,5 +50,15 @@ public class ImageEntity {
         int result = id;
         result = 31 * result + (url != null ? url.hashCode() : 0);
         return result;
+    }
+
+    @ManyToOne
+    @JoinColumn(name = "foodid", referencedColumnName = "id")
+    public FoodEntity getFoodByFoodid() {
+        return foodByFoodid;
+    }
+
+    public void setFoodByFoodid(FoodEntity foodByFoodid) {
+        this.foodByFoodid = foodByFoodid;
     }
 }

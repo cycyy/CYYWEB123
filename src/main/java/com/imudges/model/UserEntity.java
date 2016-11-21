@@ -1,9 +1,10 @@
 package com.imudges.model;
 
 import javax.persistence.*;
+import java.util.Collection;
 
 /**
- * Created by cyy on 2016/10/26.
+ * Created by cyy on 2016/11/21.
  */
 @Entity
 @Table(name = "user", schema = "test", catalog = "")
@@ -13,8 +14,9 @@ public class UserEntity {
     private String password;
     private String phoneNumber;
     private String sex;
-    private String f_name;
-    private String l_name;
+    private String firstName;
+    private String lastName;
+    private Collection<OrderEntity> ordersById;
 
     @Id
     @Column(name = "id", nullable = false)
@@ -25,28 +27,6 @@ public class UserEntity {
     public void setId(int id) {
         this.id = id;
     }
-
-    @Basic
-    @Column(name = "first_name", nullable = false, length = 255)
-    public String getF_name() {
-        return f_name;
-    }
-
-    public void setF_name(String f_name) {
-        this.f_name = f_name;
-    }
-
-    @Basic
-    @Column(name = "last_name", nullable = false, length = 255)
-    public String getL_name() {
-        return l_name;
-    }
-
-    public void setL_name(String l_name) {
-        this.l_name = l_name;
-    }
-
-
 
     @Basic
     @Column(name = "email", nullable = false, length = 255)
@@ -69,7 +49,7 @@ public class UserEntity {
     }
 
     @Basic
-    @Column(name = "phone_number",length = 255)
+    @Column(name = "phone_number", nullable = true, length = 255)
     public String getPhoneNumber() {
         return phoneNumber;
     }
@@ -88,6 +68,26 @@ public class UserEntity {
         this.sex = sex;
     }
 
+    @Basic
+    @Column(name = "first_name", nullable = true, length = 255)
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    @Basic
+    @Column(name = "last_name", nullable = true, length = 255)
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -100,8 +100,9 @@ public class UserEntity {
         if (password != null ? !password.equals(that.password) : that.password != null) return false;
         if (phoneNumber != null ? !phoneNumber.equals(that.phoneNumber) : that.phoneNumber != null) return false;
         if (sex != null ? !sex.equals(that.sex) : that.sex != null) return false;
-        if (f_name != null ? !f_name.equals(that.f_name) : that.f_name!= null) return false;
-        if (l_name != null ? !l_name.equals(that.l_name) : that.l_name!= null) return false;
+        if (firstName != null ? !firstName.equals(that.firstName) : that.firstName != null) return false;
+        if (lastName != null ? !lastName.equals(that.lastName) : that.lastName != null) return false;
+
         return true;
     }
 
@@ -112,8 +113,17 @@ public class UserEntity {
         result = 31 * result + (password != null ? password.hashCode() : 0);
         result = 31 * result + (phoneNumber != null ? phoneNumber.hashCode() : 0);
         result = 31 * result + (sex != null ? sex.hashCode() : 0);
-        result = 31 * result + (f_name!= null ? f_name.hashCode() : 0);
-        result = 31 * result + (l_name!= null ? l_name.hashCode() : 0);
+        result = 31 * result + (firstName != null ? firstName.hashCode() : 0);
+        result = 31 * result + (lastName != null ? lastName.hashCode() : 0);
         return result;
+    }
+
+    @OneToMany(mappedBy = "userByCustomarid")
+    public Collection<OrderEntity> getOrdersById() {
+        return ordersById;
+    }
+
+    public void setOrdersById(Collection<OrderEntity> ordersById) {
+        this.ordersById = ordersById;
     }
 }
