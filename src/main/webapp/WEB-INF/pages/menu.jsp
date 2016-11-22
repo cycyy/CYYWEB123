@@ -168,7 +168,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<img src=${foodEntity.imagesById.get(0).url} class="img-responsive" alt="" />
 								<div class="cur">
 									<div class="cur-left">
-										<div class="item_add"><span class="item_price"><a href="add_thinggs?food_id}"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a></span></div>
+										<div class="item_add"><span class="item_price"><a href="add_things?foodId=${foodEntity.id}"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a></span></div>
 									</div>
 									<div class="cur-right">
 										<div class="item_add"><span class="item_price"><h6>${foodEntity.name} <span>only</span> ¥${foodEntity.price}</h6></span></div>

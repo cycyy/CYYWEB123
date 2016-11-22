@@ -29,7 +29,6 @@ public class Personal {
         }
         else {
             if(new_password1.equals(new_password2)) {
-                userRepository.findOne(userEntity1.getId());
                 if(first_name!="") { userEntity1.setFirstName(first_name);}
                 if(last_name!="") { userEntity1.setLastName(last_name);}
                 if(email!="") { userEntity1.setEmail(email);}

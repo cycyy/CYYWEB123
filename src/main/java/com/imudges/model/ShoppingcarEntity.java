@@ -10,8 +10,8 @@ import java.sql.Timestamp;
 @Table(name = "shoppingcar", schema = "test", catalog = "")
 public class ShoppingcarEntity {
     private int id;
-    private String allprice;
-    private Integer foodid;
+    private Integer allprice;
+    private String foodid;
     private Timestamp time;
 
     @Id
@@ -26,21 +26,21 @@ public class ShoppingcarEntity {
 
     @Basic
     @Column(name = "allprice", nullable = true, length = 255)
-    public String getAllprice() {
+    public Integer getAllprice() {
         return allprice;
     }
 
-    public void setAllprice(String allprice) {
+    public void setAllprice(Integer allprice) {
         this.allprice = allprice;
     }
 
     @Basic
     @Column(name = "foodid", nullable = true)
-    public Integer getFoodid() {
+    public String getFoodid() {
         return foodid;
     }
 
-    public void setFoodid(Integer foodid) {
+    public void setFoodid(String foodid) {
         this.foodid = foodid;
     }
 
