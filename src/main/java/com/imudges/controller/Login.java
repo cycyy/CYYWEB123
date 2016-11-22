@@ -38,7 +38,9 @@ public class Login {
             if(userEntity.getPassword().equals(password)) {
                 //<p>${currentUser.name}</p>
                 modelMap.addAttribute("currentUser", userEntity);
-                shoppingcarRespository.saveAndFlush(shoppingcarEntity);;
+                shoppingcarEntity.setCookie(userEntity.getEmail());
+                shoppingcarEntity = shoppingcarRespository.saveAndFlush(shoppingcarEntity);
+
                 modelMap.addAttribute("currentShoppingcar",shoppingcarEntity);
                 //UserEntity userEntity1 = (UserEntity) modelMap.get("currentUser");  判断是否登录了用户
                 return "index";

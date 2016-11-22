@@ -13,7 +13,7 @@ public class ShoppingcarEntity {
     private Integer allprice;
     private String foodid;
     private Timestamp time;
-
+    private String cookie;
     @Id
     @Column(name = "id", nullable = false)
     public int getId() {
@@ -32,6 +32,15 @@ public class ShoppingcarEntity {
 
     public void setAllprice(Integer allprice) {
         this.allprice = allprice;
+    }
+
+    @Basic
+    @Column(name = "cookie", nullable = true, length = 255)
+    public String getCookie() {
+        return cookie;
+    }
+    public void setCookie(String cookie) {
+        this.cookie = cookie;
     }
 
     @Basic

@@ -41,6 +41,7 @@ public class Menu {
     }
     @RequestMapping(value="add_things",method = RequestMethod.GET)
     public String Add_things(ModelMap modelMap,int foodId){
+        shoppingcarRespository.findByCookie(u)
         String newfoodId=String.valueOf(foodId);
         ShoppingcarEntity shoppingcarEntity=(ShoppingcarEntity)modelMap.get("currentShoppingcar");
         String oldFoodId=shoppingcarEntity.getFoodid();

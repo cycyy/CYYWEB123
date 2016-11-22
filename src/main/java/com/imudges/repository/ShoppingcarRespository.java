@@ -7,4 +7,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
  * Created by cyy on 2016/11/21.
  */
 public interface ShoppingcarRespository extends JpaRepository<ShoppingcarEntity,Integer> {
+    public ShoppingcarEntity findByCookie(String cookie);
 }

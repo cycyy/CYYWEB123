@@ -3,10 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="2331c272-a2e4-4a73-8c77-6bd5259ba8b2" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/imudges/controller/Login.java" afterPath="$PROJECT_DIR$/src/main/java/com/imudges/controller/Login.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/imudges/controller/Menu.java" afterPath="$PROJECT_DIR$/src/main/java/com/imudges/controller/Menu.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/imudges/controller/Personal.java" afterPath="$PROJECT_DIR$/src/main/java/com/imudges/controller/Personal.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/imudges/model/ShoppingcarEntity.java" afterPath="$PROJECT_DIR$/src/main/java/com/imudges/model/ShoppingcarEntity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/menu.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/menu.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/imudges/repository/ShoppingcarRespository.java" afterPath="$PROJECT_DIR$/src/main/java/com/imudges/repository/ShoppingcarRespository.java" />
     </list>
     <ignored path="CYYWEB123.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -46,8 +47,8 @@
       <file leaf-file-name="Menu.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/imudges/controller/Menu.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="47" column="47" selection-start-line="47" selection-start-column="47" selection-end-line="47" selection-end-column="47" />
+            <state relative-caret-position="60">
+              <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -68,8 +69,8 @@
       <file leaf-file-name="Register.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/imudges/controller/Register.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="427">
-              <caret line="31" column="31" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
+            <state relative-caret-position="143">
+              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -78,8 +79,8 @@
       <file leaf-file-name="Personal.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/imudges/controller/Personal.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="472">
-              <caret line="30" column="53" selection-start-line="30" selection-start-column="53" selection-end-line="30" selection-end-column="53" />
+            <state relative-caret-position="217">
+              <caret line="31" column="8" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -100,6 +101,16 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="ShoppingcarRespository.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/imudges/repository/ShoppingcarRespository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="200">
+              <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="menu.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/menu.jsp">
           <provider selected="true" editor-type-id="text-editor">
@@ -110,38 +121,23 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="UserRepository.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/imudges/repository/UserRepository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="191">
+              <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="MainController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/imudges/controller/MainController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="35" column="20" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="20" />
+            <state relative-caret-position="241">
+              <caret line="33" column="36" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ShoppingcarEntity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/imudges/model/ShoppingcarEntity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-438">
-              <caret line="37" column="45" selection-start-line="37" selection-start-column="45" selection-end-line="37" selection-end-column="45" />
-              <folding>
-                <element signature="e#884#885#0" expanded="true" />
-                <element signature="e#920#921#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OrderEntity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/imudges/model/OrderEntity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1620">
-              <caret line="73" column="0" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
-              <folding>
-                <element signature="e#1743#1744#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -150,8 +146,8 @@
       <file leaf-file-name="Login.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/imudges/controller/Login.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="109">
-              <caret line="31" column="29" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="29" />
+            <state relative-caret-position="458">
+              <caret line="40" column="56" selection-start-line="40" selection-start-column="56" selection-end-line="40" selection-end-column="56" />
               <folding />
             </state>
           </provider>
@@ -204,15 +200,15 @@
         <option value="$PROJECT_DIR$/src/main/java/com/imudges/repository/FoodRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/imudges/repository/ImageRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/imudges/repository/OrderRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/imudges/repository/ShoppingcarRespository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/imudges/repository/UserRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/imudges/controller/MainController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/imudges/controller/Register.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/imudges/model/FoodEntity.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/menu.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/imudges/controller/Login.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/imudges/model/ShoppingcarEntity.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/menu.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/imudges/controller/Personal.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/imudges/repository/ShoppingcarRespository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/imudges/controller/Menu.java" />
       </list>
     </option>
@@ -1085,7 +1081,7 @@
       <workItem from="1479616093494" duration="15714000" />
       <workItem from="1479711557874" duration="12190000" />
       <workItem from="1479724722238" duration="7887000" />
-      <workItem from="1479795669191" duration="10500000" />
+      <workItem from="1479795669191" duration="11977000" />
     </task>
     <task id="LOCAL-00001" summary="数据库配置完成">
       <created>1477475716992</created>
@@ -1220,11 +1216,18 @@
       <option name="project" value="LOCAL" />
       <updated>1479815869499</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="加入购物车">
+      <created>1479821311992</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1479821311992</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="193904000" />
+    <option name="totallyTimeSpent" value="195381000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
@@ -1240,7 +1243,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32884097" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31266847" sideWeight="0.49426934" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31266847" sideWeight="0.49426934" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1252,7 +1255,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22063038" sideWeight="0.24297188" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32884097" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32884097" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2213467" sideWeight="0.17520216" order="5" side_tool="true" content_ui="tabs" />
     </layout>
   </component>
@@ -1277,11 +1280,26 @@
     <MESSAGE value="修改个人信息" />
     <MESSAGE value="购物车功能编写中" />
     <MESSAGE value="从数据库加载图片" />
-    <option name="LAST_COMMIT_MESSAGE" value="从数据库加载图片" />
+    <MESSAGE value="加入购物车" />
+    <option name="LAST_COMMIT_MESSAGE" value="加入购物车" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="27" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/imudges/controller/Login.java</url>
+          <line>41</line>
+          <properties />
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/imudges/controller/Login.java</url>
+          <line>43</line>
+          <properties />
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="29" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1492,7 +1510,7 @@
         <state relative-caret-position="143">
           <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1530,14 +1548,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/imudges/repository/UserRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/imudges/model/ImageEntity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="912">
@@ -1546,14 +1556,6 @@
             <element signature="e#1259#1260#0" expanded="true" />
             <element signature="e#1294#1295#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/imudges/repository/ShoppingcarRespository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1596,16 +1598,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/imudges/controller/Register.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
-          <caret line="31" column="31" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
+        <state relative-caret-position="143">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/imudges/controller/MainController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="33" column="36" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/imudges/model/ShoppingcarEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+          <folding>
+            <element signature="e#851#852#0" expanded="true" />
+            <element signature="e#880#881#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/imudges/controller/Personal.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="472">
-          <caret line="30" column="53" selection-start-line="30" selection-start-column="53" selection-end-line="30" selection-end-column="53" />
+        <state relative-caret-position="217">
+          <caret line="31" column="8" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1614,37 +1637,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/imudges/controller/Login.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="31" column="29" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="29" />
+        <state relative-caret-position="458">
+          <caret line="40" column="56" selection-start-line="40" selection-start-column="56" selection-end-line="40" selection-end-column="56" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/imudges/model/ShoppingcarEntity.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/imudges/repository/UserRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-438">
-          <caret line="37" column="45" selection-start-line="37" selection-start-column="45" selection-end-line="37" selection-end-column="45" />
-          <folding>
-            <element signature="e#884#885#0" expanded="true" />
-            <element signature="e#920#921#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="191">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/imudges/controller/MainController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/imudges/repository/ShoppingcarRespository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="35" column="20" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="200">
+          <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/imudges/controller/Menu.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="47" column="47" selection-start-line="47" selection-start-column="47" selection-end-line="47" selection-end-column="47" />
+        <state relative-caret-position="60">
+          <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
