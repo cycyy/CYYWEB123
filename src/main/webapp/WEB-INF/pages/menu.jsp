@@ -57,9 +57,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						</div>
 						<div class="cart box_1">
 							<a href="checkout.html">
-								<h3> <span class="simpleCart_total"> $0.00 </span> (<span id="simpleCart_quantity" class="simpleCart_quantity"> 0 </span> items)<img src="images/bag.png" alt=""></h3>
-							</a>	
-							<p><a href="javascript:;" class="simpleCart_empty">Empty cart</a></p>
+								<h3> <span class="simpleCart_total"> ${currentShoppingcar.allprice} </span> (<span id="simpleCart_quantity" class="simpleCart_quantity"> 0 </span> items)<img src="images/bag.png" alt=""></h3>
+							</a>
 							<div class="clearfix"> </div>
 						</div>
 				</div>
@@ -168,7 +167,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<img src=${foodEntity.imagesById.get(0).url} class="img-responsive" alt="" />
 								<div class="cur">
 									<div class="cur-left">
-										<div class="item_add"><span class="item_price"><a href="add_things?foodId=${foodEntity.id}"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a></span></div>
+										<div class="item_add"><span class="item_price"><a href="add_things?foodId=${foodEntity.id}&foodPrice=${foodEntity.price}"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a></span></div>
 									</div>
 									<div class="cur-right">
 										<div class="item_add"><span class="item_price"><h6>${foodEntity.name} <span>only</span> ¥${foodEntity.price}</h6></span></div>

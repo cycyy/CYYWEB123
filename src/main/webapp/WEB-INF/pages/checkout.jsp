@@ -36,7 +36,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="phone">
 							<ul>
 								<li><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span></li>
-								<li><p>+4758 655 5947</p></li>
+								<li><p>+157 5495 3425</p></li>
 							</ul>
 						</div>
 						<div class="logo">
@@ -157,7 +157,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- checkout -->
 <div class="cart-items">
 	<div class="container">
-			 <h1>My Shopping Bag (3)</h1>
+			 <h1>My Shopping Bag </h1>
 				<script>$(document).ready(function(c) {
 					$('.close1').on('click', function(c){
 						$('.cart-header').fadeOut('slow', function(c){

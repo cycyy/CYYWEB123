@@ -12,7 +12,7 @@ public class ShoppingcarEntity {
     private int id;
     private Integer allprice;
     private String foodid;
-    private Timestamp time;
+    private String time;
     private String cookie;
     @Id
     @Column(name = "id", nullable = false)
@@ -55,11 +55,11 @@ public class ShoppingcarEntity {
 
     @Basic
     @Column(name = "time", nullable = true)
-    public Timestamp getTime() {
+    public String getTime() {
         return time;
     }
 
-    public void setTime(Timestamp time) {
+    public void setTime(String time) {
         this.time = time;
     }
 
