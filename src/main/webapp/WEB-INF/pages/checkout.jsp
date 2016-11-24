@@ -55,8 +55,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						</div>
 						<div class="cart box_1">
 							<a href="checkout.html">
-								<h3> <span class="simpleCart_total"> $0.00 </span> (<span id="simpleCart_quantity" class="simpleCart_quantity"> 0 </span> items)<img src="images/bag.png" alt=""></h3>
-							</a>	
+                                <h3> <span class="simpleCart_total"> ¥${currentShoppingcar.allprice} </span> (<span id="simpleCart_quantity" class="simpleCart_quantity"> ${number}</span> items)<img src="images/bag.png" alt=""></h3>
 							<p><a href="javascript:;" class="simpleCart_empty">Empty cart</a></p>
 							<div class="clearfix"> </div>
 						</div>
@@ -166,11 +165,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						});	  
 					});
 			   </script>
-			 <div class="cart-header">
+				<c:forEach var="i" begin="0" end="${sourceStrArray}">
+			 <div class="cart-header"
 				 <div class="close1"> </div>
 				 <div class="cart-sec simpleCart_shelfItem">
 						<div class="cart-item cyc">
-							 <img src="images/c1.jpg" class="img-responsive" alt="">
+							 <img src=${} class="img-responsive" alt="">
 						</div>
 					   <div class="cart-item-info">
 						<h3><a href="#"> Lorem Ipsum is not simply </a><span>Pickup time:</span></h3>

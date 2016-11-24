@@ -23,6 +23,7 @@ import java.util.List;
 @Controller
 @SessionAttributes({"currentUser","currentShoppingcar"})
 public class Menu {
+    private int things_num=0;
     @Autowired
     private FoodRepository foodRepository;
     @Autowired
@@ -32,7 +33,11 @@ public class Menu {
     private UserEntity userEntity;
     private ShoppingcarEntity shoppingcarEntity;
     @RequestMapping(value = "/checkout.html",method = RequestMethod.GET)
-    public String Menu(){
+    public String Menu(ModelMap modelMap){
+        shoppingcarEntity=(ShoppingcarEntity)modelMap.get("currentShoppingcar");
+        String[] sourceStrArray = shoppingcarEntity.getFoodid().split(" ");
+        modelMap.addAttribute("sourceStrArray",sourceStrArray);
+
         return "checkout";
     }
     @RequestMapping(value = "/personal.html",method = RequestMethod.GET)
@@ -62,7 +67,7 @@ public class Menu {
         if(oldtime==null){
             oldtime="";
         }
-        oldtime=oldtime+" "+newtime;
+        oldtime=oldtime+";"+newtime;
         shoppingcarEntity.setTime(oldtime);
         int newPrice=foodPrice;
         int oldPrice=shoppingcarEntity.getAllprice();
@@ -72,6 +77,9 @@ public class Menu {
         List<FoodEntity> foodEntityList = foodRepository.findAll();
         modelMap.addAttribute("foodEntityList",foodEntityList);
         modelMap.addAttribute("currentShoppingcar",shoppingcarEntity);
+        String[] sourceStrArray = newfoodId.split(" ");
+        things_num=sourceStrArray.length-1;
+        modelMap.addAttribute("number",things_num);
         return "menu";
     }
 

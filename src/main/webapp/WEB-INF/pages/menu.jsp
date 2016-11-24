@@ -57,7 +57,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						</div>
 						<div class="cart box_1">
 							<a href="checkout.html">
-								<h3> <span class="simpleCart_total"> ${currentShoppingcar.allprice} </span> (<span id="simpleCart_quantity" class="simpleCart_quantity"> 0 </span> items)<img src="images/bag.png" alt=""></h3>
+								<h3> <span class="simpleCart_total"> ¥${currentShoppingcar.allprice} </span> (<span id="simpleCart_quantity" class="simpleCart_quantity"> ${number}</span> items)<img src="images/bag.png" alt=""></h3>
 							</a>
 							<div class="clearfix"> </div>
 						</div>
