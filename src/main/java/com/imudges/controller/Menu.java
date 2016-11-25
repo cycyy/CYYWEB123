@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.SessionAttributes;
 
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -36,8 +37,11 @@ public class Menu {
     public String Menu(ModelMap modelMap){
         shoppingcarEntity=(ShoppingcarEntity)modelMap.get("currentShoppingcar");
         String[] sourceStrArray = shoppingcarEntity.getFoodid().split(" ");
-        modelMap.addAttribute("sourceStrArray",sourceStrArray);
-
+        List<FoodEntity> foodEntities = new ArrayList<>();
+        for(int i =0;i<sourceStrArray.length;i++){
+            foodEntities.add(foodRepository.findOne(Integer.valueOf(sourceStrArray[i])));
+        }
+        modelMap.addAttribute("foodEntities",foodEntities);
         return "checkout";
     }
     @RequestMapping(value = "/personal.html",method = RequestMethod.GET)
@@ -58,7 +62,7 @@ public class Menu {
         if(oldFoodId==null){
             oldFoodId="";
         }
-        newfoodId=oldFoodId+" "+newfoodId;
+        else  newfoodId=oldFoodId+" "+newfoodId;
         shoppingcarEntity.setFoodid(newfoodId);
         Date day=new Date();
         SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm");
@@ -78,7 +82,7 @@ public class Menu {
         modelMap.addAttribute("foodEntityList",foodEntityList);
         modelMap.addAttribute("currentShoppingcar",shoppingcarEntity);
         String[] sourceStrArray = newfoodId.split(" ");
-        things_num=sourceStrArray.length-1;
+        things_num=sourceStrArray.length ;
         modelMap.addAttribute("number",things_num);
         return "menu";
     }
