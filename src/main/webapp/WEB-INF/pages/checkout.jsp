@@ -173,14 +173,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							 <img src=${foodEntity.imagesById.get(0).url} class="img-responsive" alt="">
 						</div>
 					   <div class="cart-item-info">
-						<h3><a href="#"> Lorem Ipsum is not simply </a><span>Pickup time:</span></h3>
+						<h3><a href="#"> ${foodEntity.name} </a><span>种类:${foodEntity.kind}</span></h3>
 						<ul class="qty">
-							<li><p>Min. order value:</p></li>
-							<li><p>FREE delivery</p></li>
+							<li><p></p></li>
+							<li><p>y</p></li>
 						</ul>
 							 <div class="delivery">
-							 <p>Service Charges : $10.00</p>
-							 <span>Delivered in 1-1:30 hours</span>
+							 <p>价格 :${foodEntity.price}</p>
+							 <span>进入时间:</span>
 							 <div class="clearfix"></div>
 				        </div>	
 					   </div>
