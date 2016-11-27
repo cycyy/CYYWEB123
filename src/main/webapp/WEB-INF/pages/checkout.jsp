@@ -176,17 +176,22 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<h3><a href="#"> ${foodEntity.name} </a><span>种类:${foodEntity.kind}</span></h3>
 						<ul class="qty">
 							<li><p></p></li>
-							<li><p>y</p></li>
+							<li><p></p></li>
 						</ul>
 							 <div class="delivery">
 							 <p>价格 :${foodEntity.price}</p>
-							 <span>进入时间:</span>
+							 <span>加入时间:${times}</span>
 							 <div class="clearfix"></div>
 				        </div>	
 					   </div>
 					   <div class="clearfix"></div>
 					  </c:forEach>
 				  </div>
+					 <div class="col-md-3 search">
+						 <form action="ok" method="post">
+							 <input type="submit" value="提交" href="index.html">
+						 </form>
+					 </div>
 			  </div>
 			  <script>$(document).ready(function(c) {
 					$('.close3').on('click', function(c){
@@ -197,7 +202,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					});
 			 </script>
 				  </div>
-			  </div>		
+			  </div>
+
 		 </div>
 		 </div>
 <!-- checkout -->	

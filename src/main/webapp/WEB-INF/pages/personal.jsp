@@ -164,7 +164,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<h3>用户信息</h3>
 					 <div class="wow fadeInLeft" data-wow-delay="0.4s">
 						<span>First Name<label>*</label></span>
-						<input type="text"  name="firstNname" value="${currentUser.f_name}" >
+						<input type="text"  name="firstName" value="${currentUser.f_name}" >
 					 </div>
 					 <div class="wow fadeInRight" data-wow-delay="0.4s" >
 						<span>Last Name<label>*</label></span>

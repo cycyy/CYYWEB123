@@ -37,11 +37,15 @@ public class Menu {
     public String Menu(ModelMap modelMap){
         shoppingcarEntity=(ShoppingcarEntity)modelMap.get("currentShoppingcar");
         String[] sourceStrArray = shoppingcarEntity.getFoodid().split(" ");
+        String[] timeStrArray=shoppingcarEntity.getTime().split(";");
         List<FoodEntity> foodEntities = new ArrayList<>();
+        List<String> time=new ArrayList<>();
         for(int i =0;i<sourceStrArray.length;i++){
+            time.add(timeStrArray[i]);
             foodEntities.add(foodRepository.findOne(Integer.valueOf(sourceStrArray[i])));
         }
         modelMap.addAttribute("foodEntities",foodEntities);
+        modelMap.addAttribute("times",time);
         return "checkout";
     }
     @RequestMapping(value = "/personal.html",method = RequestMethod.GET)
@@ -71,8 +75,8 @@ public class Menu {
         if(oldtime==null){
             oldtime="";
         }
-        oldtime=oldtime+";"+newtime;
-        shoppingcarEntity.setTime(oldtime);
+        else newtime=oldtime+";"+newtime;
+        shoppingcarEntity.setTime(newtime);
         int newPrice=foodPrice;
         int oldPrice=shoppingcarEntity.getAllprice();
         newPrice=newPrice+oldPrice;

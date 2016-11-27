@@ -10,7 +10,7 @@ import java.sql.Timestamp;
 @Table(name = "order", schema = "test", catalog = "")
 public class OrderEntity {
     private int id;
-    private Timestamp time;
+    private String time;
     private Integer price;
     private UserEntity userByCustomarid;
     private FoodEntity foodByFoodid;
@@ -27,11 +27,11 @@ public class OrderEntity {
 
     @Basic
     @Column(name = "time", nullable = true)
-    public Timestamp getTime() {
+    public String getTime() {
         return time;
     }
 
-    public void setTime(Timestamp time) {
+    public void setTime(String time) {
         this.time = time;
     }
 
