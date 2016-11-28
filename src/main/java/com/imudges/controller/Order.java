@@ -4,6 +4,7 @@ import com.imudges.model.FoodEntity;
 import com.imudges.model.OrderEntity;
 import com.imudges.model.ShoppingcarEntity;
 import com.imudges.model.UserEntity;
+import com.imudges.repository.FoodRepository;
 import com.imudges.repository.OrderRepository;
 import com.imudges.repository.ShoppingcarRespository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,6 +26,8 @@ public class Order {
     private UserEntity userEntity;
     private FoodEntity foodEntity;
     @Autowired
+    private FoodRepository foodRepository;
+    @Autowired
     private OrderRepository orderRepository;
     @RequestMapping(value = "/ok",method = RequestMethod.POST)
     public String Show(ModelMap modelMap){
@@ -33,11 +36,13 @@ public class Order {
         String[] sourceStrArray = shoppingcarEntity.getFoodid().split(" ");
         String[] timeStrArray=shoppingcarEntity.getTime().split(";");
         for(int i=0;i<sourceStrArray.length;i++){
-           OrderEntity orderEntity=new OrderEntity();
+            foodEntity=foodRepository.findOne(Integer.valueOf(sourceStrArray[i]));
+            OrderEntity orderEntity=new OrderEntity();
             orderEntity.setTime(timeStrArray[i]);
             orderEntity.setUserByCustomarid(userEntity);
             orderEntity.setPrice(foodEntity.getPrice());
             orderEntity.setFoodByFoodid(foodEntity);
+            orderRepository.saveAndFlush(orderEntity);
         }
         shoppingcarRespository.delete(shoppingcarEntity);
         return "index";

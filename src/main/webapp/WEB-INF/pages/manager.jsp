@@ -7,7 +7,7 @@
         <link href="css/public.css" type="text/css" rel="stylesheet">
         <link href="css/houtai.css" type="text/css" rel="stylesheet">
         <link href="css/smartMenu.css" type="text/css" rel="stylesheet">
-        <title>校友网</title>
+        <title>后台管理</title>
     </head>
     <body>
     	<div id="admin">

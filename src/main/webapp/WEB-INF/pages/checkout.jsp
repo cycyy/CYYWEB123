@@ -180,13 +180,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						</ul>
 							 <div class="delivery">
 							 <p>价格 :${foodEntity.price}</p>
-							 <span>加入时间:${times}</span>
+							 <span>加入时间:${times.get(status.index)}</span>
 							 <div class="clearfix"></div>
-				        </div>	
+				        </div>
 					   </div>
 					   <div class="clearfix"></div>
 					  </c:forEach>
 				  </div>
+
+
 					 <div class="col-md-3 search">
 						 <form action="ok" method="post">
 							 <input type="submit" value="提交" href="index.html">
