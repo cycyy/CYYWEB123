@@ -32,7 +32,6 @@ public class MainController {
     public String Menu(ModelMap modelMap){
         List<FoodEntity> foodEntityList = foodRepository.findAll();
         modelMap.addAttribute("foodEntityList",foodEntityList);
-
         return "menu";
     }
 
