@@ -12,7 +12,7 @@
     <body>
     	<div id="admin">
     		<div class="ad-menu" id="ad-menu">
-                <div class="ad-logo"><img src="image/m-logo.png" height="103" width="130"></div>
+                <div class="ad-logo"><img src="images/m-logo.png" height="103" width="130"></div>
                 <div class="ad-list">
                     <ul>
                         <li>
@@ -226,7 +226,7 @@
                                 </ul>
                             </div>
                             <div class="ad-welcom">
-                                <div class="ad-wel-img"><img src="image/min_logo.png" height="36" width="36"></div>
+                                <div class="ad-wel-img"><img src="images/min_logo.png" height="36" width="36"></div>
                                 <div class="ad-wel-text">
                                     <div class="font-wel">欢迎您！<strong>李春华</strong></div>
                                     <div class="font-wel"><a href="javascript:;"><strong>【退出】</strong></a></div>

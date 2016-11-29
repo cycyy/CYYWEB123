@@ -36,17 +36,34 @@ public class Menu {
     @RequestMapping(value = "/checkout.html",method = RequestMethod.GET)
     public String Menu(ModelMap modelMap){
         shoppingcarEntity=(ShoppingcarEntity)modelMap.get("currentShoppingcar");
-        String[] sourceStrArray = shoppingcarEntity.getFoodid().split(" ");
-        String[] timeStrArray=shoppingcarEntity.getTime().split(";");
-        List<FoodEntity> foodEntities = new ArrayList<>();
-        List<String> time=new ArrayList<>();
-        for(int i =0;i<sourceStrArray.length;i++){
-            time.add(timeStrArray[i]);
-            foodEntities.add(foodRepository.findOne(Integer.valueOf(sourceStrArray[i])));
+        if(shoppingcarEntity!=null) {
+            if (shoppingcarEntity.getFoodid()!=null){
+                String[] sourceStrArray = shoppingcarEntity.getFoodid().split(" ");
+                String[] timeStrArray = shoppingcarEntity.getTime().split(";");
+                List<FoodEntity> foodEntities = new ArrayList<>();
+                List<String> time = new ArrayList<>();
+                for (int i = 0; i < sourceStrArray.length; i++) {
+                    time.add(timeStrArray[i]);
+                    foodEntities.add(foodRepository.findOne(Integer.valueOf(sourceStrArray[i])));
+                }
+                modelMap.addAttribute("foodEntities", foodEntities);
+                modelMap.addAttribute("times", time);
+                return "checkout";
+            }else {
+                List<FoodEntity> foodEntities = new ArrayList<>();
+                List<String> time = new ArrayList<>();
+                modelMap.addAttribute("foodEntities", foodEntities);
+                modelMap.addAttribute("times", time);
+                return "checkout";
+            }
+
+        }else {
+            List<FoodEntity> foodEntities = new ArrayList<>();
+            List<String> time = new ArrayList<>();
+            modelMap.addAttribute("foodEntities", foodEntities);
+            modelMap.addAttribute("times", time);
+            return "checkout";
         }
-        modelMap.addAttribute("foodEntities",foodEntities);
-        modelMap.addAttribute("times",time);
-        return "checkout";
     }
     @RequestMapping(value = "/personal.html",method = RequestMethod.GET)
     public String Personal(){
@@ -61,6 +78,9 @@ public class Menu {
     public String Add_things(ModelMap modelMap,int foodId,int foodPrice){
         userEntity = (UserEntity) modelMap.get("currentUser");
         shoppingcarEntity = shoppingcarRespository.findByCookie(userEntity.getEmail());
+        if(shoppingcarEntity ==null){
+            shoppingcarEntity = new ShoppingcarEntity();
+        }
         String newfoodId=String.valueOf(foodId);
         String oldFoodId=shoppingcarEntity.getFoodid();
         if(oldFoodId==null){

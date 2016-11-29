@@ -47,4 +47,27 @@ public class Order {
         shoppingcarRespository.delete(shoppingcarEntity);
         return "index";
     }
+
+    @RequestMapping(value="deleteFood",method = RequestMethod.GET)
+    public String Delete(ModelMap modelMap,int status){
+        shoppingcarEntity=(ShoppingcarEntity) modelMap.get("currentShoppingcar");
+        userEntity=(UserEntity) modelMap.get("currentUser");
+        String[] sourceStrArray = shoppingcarEntity.getFoodid().split(" ");
+        String[] timeStrArray=shoppingcarEntity.getTime().split(";");
+        foodEntity=foodRepository.findOne(Integer.valueOf(sourceStrArray[status]));
+        for(int i=status;i<sourceStrArray.length-1;i++){
+            sourceStrArray[i]=sourceStrArray[i+1];
+            timeStrArray[i]=timeStrArray[i+1];
+        }
+        String foodId="",times="";
+        for(int i=1;i<sourceStrArray.length-1;i++){
+            foodId=foodId+sourceStrArray[i];
+            times=times+timeStrArray[i];
+        }
+        shoppingcarEntity.setAllprice(shoppingcarEntity.getAllprice()-foodEntity.getPrice());
+        shoppingcarEntity.setTime(times);
+        shoppingcarEntity.setFoodid(foodId);
+        shoppingcarRespository.saveAndFlush(shoppingcarEntity);
+        return "checkout";
+    }
 }

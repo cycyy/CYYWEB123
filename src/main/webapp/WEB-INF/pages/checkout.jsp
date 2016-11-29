@@ -167,7 +167,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			   </script>
 				<c:forEach var="foodEntity" items="${foodEntities}" varStatus="status">
 				 <div class="cart-header2">
-				 <div class="close2"> </div>
+					 <a href="deleteFood?status=${status.index}"><div class="close2"> </div></a>
 				  <div class="cart-sec simpleCart_shelfItem">
 						<div class="cart-item cyc">
 							 <img src=${foodEntity.imagesById.get(0).url} class="img-responsive" alt="">
