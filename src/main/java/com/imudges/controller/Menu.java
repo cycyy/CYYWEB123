@@ -66,9 +66,12 @@ public class Menu {
         }
     }
     @RequestMapping(value = "/personal.html",method = RequestMethod.GET)
-    public String Personal(){
+    public String Personal(ModelMap modelMap){
+        userEntity = (UserEntity) modelMap.get("currentUser");
+        modelMap.addAttribute("currentUser",userEntity);
         return "personal";
     }
+
 
     @RequestMapping(value = "/add_submit",method = RequestMethod.POST)
     public String Submit(){
