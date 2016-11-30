@@ -37,6 +37,18 @@ public class Manager {
         modelMap.addAttribute("userEntityList",userEntityList);
         return "index_v0";
     }
+    @RequestMapping(value = "/index_v1.html",method = RequestMethod.GET)
+    public String ShowFood(ModelMap modelMap){
+        List<FoodEntity> foodEntityList=foodRepository.findAll();
+        modelMap.addAttribute("foodEntityList",foodEntityList);
+        return "index_v1";
+    }
+    @RequestMapping(value = "/index_v2.html",method = RequestMethod.GET)
+    public String AddFood(ModelMap modelMap){
+        /*List<FoodEntity> foodEntityList=foodRepository.findAll();
+        modelMap.addAttribute("foodEntityList",foodEntityList);*/
+        return "index_v2";
+    }
     @RequestMapping(value = "DeleteUser",method = RequestMethod.GET)
     public String DeleteUser(int id,ModelMap modelMap){
         userRepository.delete(id);
@@ -45,12 +57,7 @@ public class Manager {
         return "index_v0";
     }
 
-    /*@RequestMapping(value = "/index_v0.html",method = RequestMethod.GET)
-    public String ShowFood(ModelMap modelMap){
-        List<UserEntity> userEntityList=userRepository.findAll();
-        modelMap.addAttribute("userEntityList",userEntityList);
-        return "index_v1";
-    }
+    /*
 
 
     @RequestMapping(value = "",method = RequestMethod.GET)

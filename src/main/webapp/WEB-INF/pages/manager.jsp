@@ -16,17 +16,13 @@
                 <div class="ad-list">
                     <ul>
                         <li>
-                            <div class="li-item"><em class="scm li-ico ic1"></em>用户管理<span class="scm arrow"></span></div>
-                            <dl>
-                                <dd>
-                                </dd>
-                            </dl>
+                            <div class="li-item" ><em class="scm li-ico ic2"></em><a onclick="onMenuMenagerClick1()">用户管理</a><span class="scm arrow"></span></div>
                         </li>
                         <li>
-                            <a href="manager2.jsp"><div class="li-item" ><em class="scm li-ico ic2"></em>菜单管理<span class="scm arrow"></span></div></a>
+                           <div class="li-item" ><em class="scm li-ico ic2"></em><a onclick="onMenuMenagerClick2()">菜单管理</a><span class="scm arrow"></span></div>
                         </li>
                         <li>
-
+                            <div class="li-item" ><em class="scm li-ico ic2"></em><a onclick="onMenuMenagerClick3()">新增菜品</a><span class="scm arrow"></span></div>
                         </li>
                     </ul>
                 </div>
@@ -90,7 +86,7 @@
                     </div>
                 </div>
                 <div class="ad-main-comment J_mainContent" id="ad-iframe">
-                    <iframe class="J_iframe" name="iframe0" width="100%" height="100%" src="index_v0.html" frameborder="0" data-id="index_v0.html" seamless></iframe>
+                    <iframe class="J_iframe" id="myFrame" name="iframe0" width="100%" height="100%" src="/index_v0.html" frameborder="0" data-id="index_v0.html" seamless></iframe>
                 </div>
     		</div>
     	</div>
@@ -103,6 +99,15 @@
             $(function(){
                 $(".ad-menu").niceScroll({cursorborder:"0 none",cursorcolor:"#1a1a19",cursoropacitymin:"0",boxzoom:false});
             })
+            function onMenuMenagerClick1() {
+                document.getElementById("myFrame").setAttribute("src", "/index_v0.html");
+            }
+            function onMenuMenagerClick2() {
+                document.getElementById("myFrame").setAttribute("src", "/index_v1.html");
+            }
+            function onMenuMenagerClick3() {
+                document.getElementById("myFrame").setAttribute("src", "/index_v2.html");
+            }
         </script>
     </body>
 </html>
