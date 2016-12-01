@@ -45,8 +45,10 @@ public class Order {
             orderRepository.saveAndFlush(orderEntity);
         }
         shoppingcarRespository.delete(shoppingcarEntity);
+        modelMap.addAttribute("currentShoppingcar",new ShoppingcarEntity());
         return "index";
     }
+
 
     @RequestMapping(value="deleteFood",method = RequestMethod.GET)
     public String Delete(ModelMap modelMap,int status){

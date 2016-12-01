@@ -5,7 +5,9 @@ package com.imudges.controller;
  */
 
 import com.imudges.model.FoodEntity;
+import com.imudges.model.ImageEntity;
 import com.imudges.repository.FoodRepository;
+import com.imudges.repository.ImageRepository;
 import com.imudges.tool.FileUpload;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -26,22 +28,30 @@ import java.io.IOException;
 public class FileController {
     @Autowired
     FoodRepository foodRepository;
+    @Autowired
+    ImageRepository imageRepository;
     private FoodEntity foodEntity;
+    private ImageEntity imageEntity;
     @RequestMapping("test")
     public String test(){
         return "test";
     }
     @RequestMapping(value = "addFood",method = RequestMethod.POST)
-    public void AddFood(String name,String kind,String price,MultipartFile image, HttpServletRequest request, HttpServletResponse response) throws IOException {
+    public String AddFood(String name,String kind,String price,MultipartFile image, HttpServletRequest request, HttpServletResponse response) throws IOException {
         foodEntity=new FoodEntity();
+        imageEntity=new ImageEntity();
         foodEntity.setName(name);
         foodEntity.setKind(kind);
         foodEntity.setPrice(Integer.valueOf(price));
         foodRepository.saveAndFlush(foodEntity);
         String filePath = FileUpload.uploadFile(image, request);
+        imageEntity.setUrl(filePath);
+        imageEntity.setFoodByFoodid(foodRepository.findAll().get(foodRepository.findAll().size()-1));
+        imageRepository.saveAndFlush(imageEntity);
         System.out.println("filePath："+filePath);
         response.setContentType("text/html;charset=utf8");
         response.getWriter().write("<img src='"+filePath+"'/>");
+        return "index_v2";
     }
 
 }
