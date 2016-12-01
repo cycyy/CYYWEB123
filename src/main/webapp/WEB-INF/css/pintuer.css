@@ -328,6 +328,42 @@ textarea.input{height:auto;}
 .input-inline input:first-child{left:1px;border-radius:4px 0 0 4px;}
 .input-inline input:last-child{border-radius:0 4px 4px 0;}
 }
+
+/*a  upload */
+.a-upload {
+    padding: 4px 10px;
+    height: 40px;
+    line-height: 40px;
+    position: relative;
+    cursor: pointer;
+    color: #888;
+    background: #fafafa;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1
+}
+
+.a-upload  input {
+    position: absolute;
+    font-size: 100px;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    cursor: pointer
+}
+
+.a-upload:hover {
+    color: #444;
+    background: #eee;
+    border-color: #ccc;
+    text-decoration: none
+}
+
+
 .input-block{padding-top:8px;}
 .input-block:first-child{padding-top:1px;}
 .input-block input{position:relative;margin-top:-1px;border-radius:0;}

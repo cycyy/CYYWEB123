@@ -1,8 +1,12 @@
 package com.imudges.controller;
 
 import com.imudges.model.FoodEntity;
+import com.imudges.model.ImageEntity;
+import com.imudges.model.OrderEntity;
 import com.imudges.model.UserEntity;
 import com.imudges.repository.FoodRepository;
+import com.imudges.repository.ImageRepository;
+import com.imudges.repository.OrderRepository;
 import com.imudges.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -20,9 +24,15 @@ public class Manager {
     @Autowired
     UserRepository userRepository;
     @Autowired
+    ImageRepository imageRepository;
+    @Autowired
+    OrderRepository orderRepository;
+    @Autowired
     FoodRepository foodRepository;
     private UserEntity userEntity;
+    private OrderEntity orderEntity;
     private FoodEntity foodEntity;
+    private ImageEntity imageEntity;
     @RequestMapping(value = "/manager.html",method = RequestMethod.GET)
     public String login(){
         return "manager";
@@ -56,19 +66,28 @@ public class Manager {
         modelMap.addAttribute("userEntityList",userEntityList);
         return "index_v0";
     }
+    @RequestMapping(value = "DeleteFood",method = RequestMethod.GET)
+    public String DeleteFood(int id,ModelMap modelMap){
+        List<OrderEntity> orderEntities = orderRepository.findAll();
+        for(OrderEntity orderEntity:orderEntities){
+            if(orderEntity.getFoodByFoodid().getId()==id){
+                orderRepository.delete(orderEntity);
+            }
+        }
+        List<ImageEntity> imageEntities = imageRepository.findAll();
+        for(ImageEntity imageEntity:imageEntities){
+            if(imageEntity.getFoodByFoodid().getId()==id){
+                imageRepository.delete(imageEntity);
+            }
+        }
+        foodRepository.delete(id);
+        List<FoodEntity>foodEntityList=foodRepository.findAll();
+        modelMap.addAttribute("foodEntityList",foodEntityList);
+        return "index_v1";
+    }
+
 
     /*
-
-
-    @RequestMapping(value = "",method = RequestMethod.GET)
-    public String DeleteFood(int id){
-        userEntity=userRepository.findOne(id);
-        return "";
-    }
-    @RequestMapping(value = "",method = RequestMethod.GET)
-    public String AddFood(int id){
-        return "";
-    }
     @RequestMapping(value = "",method = RequestMethod.GET)
     public String ChangeFood(int id){
         return "";

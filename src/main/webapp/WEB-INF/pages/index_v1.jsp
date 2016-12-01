@@ -37,7 +37,7 @@
           <td>${food.name}</td>
             <td>${food.kind}</td>
             <td>${food.price}</td>
-          <td><div class="button-group"> <a class="button border-red" href="DeleteUser?id=${user.id}"><span class="icon-trash-o"></span> 删除</a> </div></td>
+          <td><div class="button-group"> <a class="button border-red" href="DeleteFood?id=${food.id}"><span class="icon-trash-o"></span> 删除</a> </div></td>
         </tr>
       </c:forEach>
     </table>

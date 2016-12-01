@@ -17,152 +17,45 @@
 <div class="panel admin-panel">
     <div class="panel-head"><strong><span class="icon-pencil-square-o"></span> 网站信息</strong></div>
     <div class="body-content">
-        <form method="post" class="form-x" action="">
+        <form method="post" class="form-x" action="/addFood" enctype="multipart/form-data">
             <div class="form-group">
                 <div class="label">
-                    <label>网站标题：</label>
+                    <label>菜名：</label>
                 </div>
                 <div class="field">
-                    <input type="text" class="input" name="stitle" value="" />
+                    <input type="text" class="input" name="name" value="" />
                     <div class="tips"></div>
                 </div>
             </div>
             <div class="form-group">
                 <div class="label">
-                    <label>网站LOGO：</label>
+                    <label>图片：</label>
                 </div>
                 <div class="field">
-                    <input type="text" id="url1" name="slogo" class="input tips" style="width:25%; float:left;" value="" data-toggle="hover" data-place="right" data-image=""  />
-                    <input type="button" class="button bg-blue margin-left" id="image1" value="+ 浏览上传" >
+                    <a href="javascript:;" class="a-upload">
+                        <input type="file" name="image" id="">点击这里上传文件
+                    </a>
                 </div>
             </div>
             <div class="form-group">
                 <div class="label">
-                    <label>网站域名：</label>
+                    <label>种类：</label>
                 </div>
                 <div class="field">
-                    <input type="text" class="input" name="surl" value="" />
+                    <input type="text" class="input" name="kind" value="" />
                 </div>
             </div>
-            <div class="form-group" style="display:none">
+            <div class="form-group" >
                 <div class="label">
-                    <label>副加标题：</label>
+                    <label>价格：</label>
                 </div>
                 <div class="field">
-                    <input type="text" class="input" name="sentitle" value="" />
-                    <div class="tips"></div>
-                </div>
-            </div>
-            <div class="form-group">
-                <div class="label">
-                    <label>网站关键字：</label>
-                </div>
-                <div class="field">
-                    <textarea class="input" name="skeywords" style="height:80px"></textarea>
-                    <div class="tips"></div>
-                </div>
-            </div>
-            <div class="form-group">
-                <div class="label">
-                    <label>网站描述：</label>
-                </div>
-                <div class="field">
-                    <textarea class="input" name="sdescription"></textarea>
-                    <div class="tips"></div>
-                </div>
-            </div>
-            <div class="form-group">
-                <div class="label">
-                    <label>联系人：</label>
-                </div>
-                <div class="field">
-                    <input type="text" class="input" name="s_name" value="" />
-                    <div class="tips"></div>
-                </div>
-            </div>
-            <div class="form-group">
-                <div class="label">
-                    <label>手机：</label>
-                </div>
-                <div class="field">
-                    <input type="text" class="input" name="s_phone" value="" />
-                    <div class="tips"></div>
-                </div>
-            </div>
-            <div class="form-group">
-                <div class="label">
-                    <label>电话：</label>
-                </div>
-                <div class="field">
-                    <input type="text" class="input" name="s_tel" value="" />
-                    <div class="tips"></div>
-                </div>
-            </div>
-            <div class="form-group" style="display:none;">
-                <div class="label">
-                    <label>400电话：</label>
-                </div>
-                <div class="field">
-                    <input type="text" class="input" name="s_400" value="" />
-                    <div class="tips"></div>
-                </div>
-            </div>
-            <div class="form-group">
-                <div class="label">
-                    <label>传真：</label>
-                </div>
-                <div class="field">
-                    <input type="text" class="input" name="s_fax" value="" />
-                    <div class="tips"></div>
-                </div>
-            </div>
-            <div class="form-group">
-                <div class="label">
-                    <label>QQ：</label>
-                </div>
-                <div class="field">
-                    <input type="text" class="input" name="s_qq" value="" />
-                    <div class="tips"></div>
-                </div>
-            </div>
-            <div class="form-group" style="display:none">
-                <div class="label">
-                    <label>QQ群：</label>
-                </div>
-                <div class="field">
-                    <input type="text" class="input" name="s_qqu" value="" />
+                    <input type="text" class="input" name="price" value="" />
                     <div class="tips"></div>
                 </div>
             </div>
 
-            <div class="form-group">
-                <div class="label">
-                    <label>Email：</label>
-                </div>
-                <div class="field">
-                    <input type="text" class="input" name="s_email" value="" />
-                    <div class="tips"></div>
-                </div>
-            </div>
-            <div class="form-group">
-                <div class="label">
-                    <label>地址：</label>
-                </div>
-                <div class="field">
-                    <input type="text" class="input" name="s_address" value="" />
-                    <div class="tips"></div>
-                </div>
-            </div>
 
-            <div class="form-group">
-                <div class="label">
-                    <label>底部信息：</label>
-                </div>
-                <div class="field">
-                    <textarea name="scopyright" class="input" style="height:120px;"></textarea>
-                    <div class="tips"></div>
-                </div>
-            </div>
             <div class="form-group">
                 <div class="label">
                     <label></label>
